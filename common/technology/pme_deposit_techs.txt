@@ -1,0 +1,117 @@
+################################################
+### Planetary Mega Engineering Deposit Techs ###
+################################################
+
+tech_pme_rudimentary_planetary_mega_engineering = {
+	cost = @tier3cost1
+	area = engineering
+	tier = 0
+	category = { materials }
+	weight = @tier3weight1
+	is_rare = yes
+
+	modifier = {
+		planet_districts_energy_upkeep_mult = -0.05
+		planet_structures_cost_mult = -0.05
+	}
+
+}
+
+tech_pme_intermediate_economic_planetary_mega_engineering = {
+	cost = @tier3cost3
+	area = society
+	tier = 1
+	prerequisites = { "tech_pme_rudimentary_planetary_mega_engineering" }
+	category = { statecraft }
+	weight = @tier3weight3
+	is_rare = yes
+
+	modifier = {
+		planet_buildings_energy_upkeep_mult = -0.05
+		planet_max_districts_add = 1
+	}
+
+}
+
+tech_pme_intermediate_governmental_planetary_mega_engineering = {
+	cost = @tier3cost3
+	area = society
+	tier = 1
+	prerequisites = { "tech_pme_rudimentary_planetary_mega_engineering" }
+	category = { statecraft }
+	weight = @tier3weight3
+	is_rare = yes
+
+	modifier = {
+		planet_structures_cost_mult = -0.05
+		planet_max_districts_add = 1
+	}
+
+}
+
+tech_pme_intermediate_defensive_planetary_mega_engineering = {
+	cost = @tier3cost3
+	area = engineering
+	tier = 1
+	prerequisites = { "tech_pme_rudimentary_planetary_mega_engineering" }
+	category = { voidcraft }
+	weight = @tier3weight3
+	is_rare = yes
+
+	modifier = {
+		planet_structures_cost_mult = -0.05
+		planet_districts_energy_upkeep_mult = -0.05
+	}
+
+}
+
+tech_pme_intermediate_industrial_planetary_mega_engineering = {
+	cost = @tier3cost3
+	area = engineering
+	tier = 1
+	prerequisites = { "tech_pme_rudimentary_planetary_mega_engineering" }
+	category = { industry }
+	weight = @tier3weight3
+	is_rare = yes
+
+	modifier = {
+		planet_districts_energy_upkeep_mult = -0.05
+		planet_buildings_energy_upkeep_mult = -0.05
+	}
+}
+
+tech_pme_advanced_planetary_mega_engineering = {
+	cost = @tier4cost1
+	area = society
+	tier = 2
+	prerequisites = { "tech_pme_intermediate_governmental_planetary_mega_engineering" }
+	category = { new_worlds }
+	weight = @tier4weight1
+	is_rare = yes
+
+	modifier = {
+		planet_districts_energy_upkeep_mult = -0.10
+		planet_buildings_energy_upkeep_mult = -0.10
+		planet_structures_cost_mult = -0.05
+		planet_max_districts_add = 1
+	}
+
+}
+
+tech_pme_ascendant_planetary_mega_engineering = {
+	cost = @tier4cost1
+	area = society
+	tier = 2
+	prerequisites = { "tech_pme_advanced_planetary_mega_engineering" }
+	category = { new_worlds }
+	weight = @tier4weight3
+	is_rare = yes
+
+	modifier = {
+		planet_districts_energy_upkeep_mult = -0.10
+		planet_buildings_energy_upkeep_mult = -0.10
+		planet_structures_cost_mult = -0.10
+		planet_max_districts_add = 2
+	}
+
+}

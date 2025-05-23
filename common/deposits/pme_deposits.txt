@@ -1,0 +1,2450 @@
+########################
+### Regular Deposits ###
+########################
+
+################
+### Advanced ###
+################
+
+pme_d_mini_ecumenopolis = {
+	
+	is_for_colonizable = yes
+	should_swap_deposit_on_terraforming = no
+	use_for_min_max_adjustments = yes
+	category = deposit_cat_rare	
+
+	country_modifier = {
+		envoys_add = 1
+		country_official_cap_add = 1
+	}
+
+	planet_modifier = {
+
+		planet_housing_add = 100
+		pop_government_ethic_attraction = 0.30
+		planet_immigration_pull_mult = 0.25
+		planet_jobs_unity_produces_mult = 0.25
+		pop_amenities_usage_mult = -0.20
+		planet_jobs_specialist_produces_mult = 0.20
+		trade_value_mult = 0.10
+		planet_max_districts_add = 3
+
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		modifier = {
+			job_clerk_add = 15
+			job_bureaucrat_add = 10
+			job_trader_add = 5
+			job_enforcer_add = 5
+			job_politician_add = 5
+			job_merchant_add = 5
+			job_culture_worker_add = 5
+			job_healthcare_add = 5
+		}
+	}
+
+	inline_script = {
+		script = jobs/pme_entertainer_add
+		AMOUNT = 5
+	}
+
+	inline_script = {
+		script = jobs/pme_technicians_add
+		AMOUNT = 5
+	}
+
+	resources = {
+		category = planet_deposits
+		produces = {
+			influence = 0.50
+		}
+		upkeep = {
+			energy = 60
+			alloys = 10
+		}
+	}
+
+	drop_weight = {
+		weight = 0
+	}	
+
+}
+
+pme_d_orbital_colonies = {
+
+	is_for_colonizable = yes
+	should_swap_deposit_on_terraforming = no
+	use_for_min_max_adjustments = yes
+	category = deposit_cat_rare
+
+	planet_modifier = {
+
+		planet_housing_add = 50
+		planet_districts_cost_mult = -0.25
+		planet_immigration_pull_mult = 0.15
+		planet_max_districts_add = 10
+
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		modifier = {
+
+			job_clerk_add = 2
+			job_enforcer_add = 2
+			job_healthcare_add = 2
+			job_bureaucrat_add = 2
+		}
+	}
+
+	inline_script = {
+		script = jobs/pme_entertainer_add
+		AMOUNT = 2
+	}
+
+	inline_script = {
+		script = jobs/pme_technicians_add
+		AMOUNT = 5
+	}
+
+	inline_script = {
+		script = jobs/pme_farmers_add
+		FARMER_AMOUNT = 5
+		ANGLER_AMOUNT = 5
+	}
+
+	resources = {
+		category = planet_deposits
+		upkeep = {
+			energy = 60
+			alloys = 10
+		}
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+
+}
+
+pme_d_fleet_academy = {
+
+	is_for_colonizable = yes
+	should_swap_deposit_on_terraforming = no
+	use_for_min_max_adjustments = yes
+	category = deposit_cat_rare	
+
+	country_modifier = {
+		country_commander_cap_add = 1
+		country_naval_cap_add = 100
+		ship_starting_experience_add = 350
+		ship_evasion_mult = 0.05
+		ship_accuracy_mult = 0.05
+		ship_weapon_range_mult = 0.05
+	}
+
+	planet_modifier = {
+
+		planet_housing_add = 10
+		planet_jobs_unity_produces_mult = 0.15
+		pop_government_ethic_attraction = 0.15
+
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		modifier = {
+			job_bureaucrat_add = 5
+			job_enforcer_add = 5
+			job_soldier_add = 5
+			job_clerk_add = 2
+		}
+	}
+
+	resources = {
+		category = planet_deposits
+		upkeep = {
+			energy = 60
+			alloys = 10
+		}
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+
+}
+
+pme_d_university_cityscape = {
+	
+	is_for_colonizable = yes
+	should_swap_deposit_on_terraforming = no
+	use_for_min_max_adjustments = yes
+	category = deposit_cat_rare
+
+	country_modifier = {
+		country_scientist_cap_add = 1
+	}
+
+	planet_modifier = {
+
+		planet_jobs_physics_research_produces_mult = 0.35
+		planet_jobs_society_research_produces_mult = 0.35
+		planet_jobs_engineering_research_produces_mult = 0.35
+		planet_researchers_upkeep_mult = -0.25
+		planet_housing_add = 30
+
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		modifier = {
+			job_head_researcher_add = 10
+			job_culture_worker_add = 5
+		}
+	}
+
+	inline_script = {
+		script = jobs/pme_entertainer_add
+		AMOUNT = 5
+	}
+
+	inline_script = {
+		script = jobs/pme_researchers_add
+		AMOUNT = 15
+	}
+
+	resources = {
+		category = planet_deposits
+		upkeep = {
+			energy = 60
+			alloys = 10
+		}
+	}
+
+	drop_weight = {
+		weight = 0
+	}	
+
+}
+
+pme_d_resort_archipelago = {
+	
+	is_for_colonizable = yes
+	should_swap_deposit_on_terraforming = no
+	use_for_min_max_adjustments = yes
+	category = deposit_cat_rare	
+
+	planet_modifier = {
+
+		planet_housing_add = 30
+		planet_immigration_pull_mult = 0.35
+		planet_jobs_unity_produces_mult = 0.20
+		planet_culture_workers_produces_mult = 0.20
+		pop_happiness = 0.10
+		pop_growth_speed = 0.05
+
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		modifier = {
+			job_culture_worker_add = 10
+			job_healthcare_add = 2
+			job_enforcer_add = 2
+		}
+	}
+
+	inline_script = {
+		script = jobs/pme_entertainer_add
+		AMOUNT = 10
+	}
+
+	resources = {
+		category = planet_deposits
+		upkeep = {
+			energy = 60
+			alloys = 10
+		}
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+
+}
+
+####################
+### Intermediate ###
+####################
+
+pme_d_space_elevator = {
+	is_for_colonizable = yes
+	should_swap_deposit_on_terraforming = no
+	use_for_min_max_adjustments = yes
+	category = deposit_cat_rare
+	
+	planet_modifier = {
+		
+		trade_value_add = 50
+		trade_value_mult = 0.35
+		planet_immigration_pull_mult = 0.25
+		planet_jobs_unity_produces_mult = 0.20
+		pop_happiness = 0.05
+
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		modifier = {
+			job_merchant_add = 5
+			job_trader_add = 5
+			job_bureaucrat_add = 5
+			job_enforcer_add = 2
+			job_soldier_add = 2
+			
+		}
+	}
+
+	inline_script = {
+		script = jobs/pme_entertainer_add
+		AMOUNT = 2
+	}
+
+	resources = {
+		category = planet_deposits
+		upkeep = {
+			energy = 30
+			alloys = 5
+		}
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+
+}
+
+pme_d_supermax_prison_rehab = {
+	
+	is_for_colonizable = yes
+	should_swap_deposit_on_terraforming = no
+	use_for_min_max_adjustments = yes
+	category = deposit_cat_rare	
+	
+	planet_modifier = {
+
+		planet_crime_add = -50
+		planet_housing_add = 25
+		planet_stability_add = 10
+		planet_structures_cost_mult = -0.10
+
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		modifier = {
+			job_enforcer_add = 10
+			job_soldier_add = 5
+			job_culture_worker_add = 2
+		}
+	}
+
+	resources = {
+		category = planet_deposits
+		upkeep = {
+			energy = 30
+			alloys = 5
+		}
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+
+}
+
+pme_d_interstellar_hospital = {
+	
+	is_for_colonizable = yes
+	should_swap_deposit_on_terraforming = no
+	use_for_min_max_adjustments = yes
+	category = deposit_cat_rare	
+
+	planet_modifier = {
+
+		planet_housing_add = 25
+		pop_growth_speed = 0.20
+		pop_happiness = 0.15
+		planet_stability_add = 15
+
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		modifier = {
+			job_healthcare_add = 10
+			job_culture_worker_add = 5
+			job_enforcer_add = 2
+		}
+	}
+
+	resources = {
+		category = planet_deposits
+		upkeep = {
+			energy = 30
+			alloys = 5
+		}
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+
+}
+
+pme_d_corporate_megacampus = {
+	
+	is_for_colonizable = yes
+	should_swap_deposit_on_terraforming = no
+	use_for_min_max_adjustments = yes
+	category = deposit_cat_rare	
+
+	planet_modifier = {
+
+		trade_value_mult = 0.30
+		planet_jobs_consumer_goods_produces_mult = 0.10
+		planet_jobs_alloys_produces_mult = 0.10
+		planet_housing_add = 10
+
+	}	
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		modifier = {
+			job_clerk_add = 5
+			job_trader_add = 10
+			job_bureaucrat_add = 5
+			job_merchant_add = 5
+			job_enforcer_add = 2
+		}
+	}
+
+	resources = {
+		category = planet_deposits
+		upkeep = {
+			energy = 30
+			alloys = 5
+		}
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+
+}
+
+pme_d_subsurface_megaforges = {
+	
+	is_for_colonizable = yes
+	should_swap_deposit_on_terraforming = no
+	use_for_min_max_adjustments = yes
+	category = deposit_cat_rare	
+
+	planet_modifier = {
+
+		planet_jobs_alloys_produces_mult = 0.25
+		planet_orbital_bombardment_damage = -0.25
+		planet_structures_cost_mult = -0.10
+		planet_metallurgists_minerals_upkeep_add = -2
+		planet_metallurgists_alloys_produces_add = 1
+
+	}	
+
+	inline_script = {
+		script = jobs/pme_foundry_add
+		AMOUNT = 15
+	}
+
+	resources = {
+		category = planet_deposits
+		upkeep = {
+			energy = 30
+			alloys = 5
+		}
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+
+}
+
+pme_d_orbital_superfactory = {
+	
+	is_for_colonizable = yes
+	should_swap_deposit_on_terraforming = no
+	use_for_min_max_adjustments = yes
+	category = deposit_cat_rare
+
+	planet_modifier = {
+
+	planet_jobs_consumer_goods_produces_mult = 0.25
+	planet_immigration_pull_mult = 0.15
+	pop_happiness = 0.10
+	planet_artisans_consumer_goods_produces_add = 2
+	planet_artisans_minerals_upkeep_add = -1
+
+	}
+
+	inline_script = {
+		script = jobs/pme_factory_add
+		AMOUNT = 15
+	}
+
+	resources = {
+		category = planet_deposits
+		upkeep = {
+			energy = 30
+			alloys = 5
+		}
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+
+}
+
+pme_d_chemical_hazardous_goods = {
+	
+	is_for_colonizable = yes
+	should_swap_deposit_on_terraforming = no
+	use_for_min_max_adjustments = yes
+	category = deposit_cat_rare
+
+	planet_modifier = {
+
+		planet_building_build_speed_mult = 0.15
+		planet_jobs_exotic_gases_produces_mult = 0.25
+		planet_jobs_rare_crystals_produces_mult = 0.25
+		planet_jobs_volatile_motes_produces_mult = 0.25
+
+	}	
+
+
+	inline_script = {
+		script = jobs/pme_chemist_add
+		AMOUNT = 5
+	}
+
+	inline_script = {
+		script = jobs/pme_refiner_add
+		AMOUNT = 5
+	}
+
+	inline_script = {
+		script = jobs/pme_translucer_add
+		AMOUNT = 5
+	}
+
+	resources = {
+		category = planet_deposits
+		upkeep = {
+			energy = 30
+			alloys = 5
+		}
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+}
+
+pme_d_orbital_defense_grid = {
+	
+	is_for_colonizable = yes
+	should_swap_deposit_on_terraforming = no
+	use_for_min_max_adjustments = yes
+	category = deposit_cat_rare
+
+	planet_modifier = {
+
+	planet_orbital_bombardment_damage = -0.65
+	planet_stability_add = 10
+
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		modifier = {
+			job_soldier_add = 10
+			job_enforcer_add = 5
+		}
+	}
+
+	resources = {
+		category = planet_deposits
+		upkeep = {
+			energy = 30
+			alloys = 5
+		}
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+
+}
+
+###################
+### Rudiemntary ###
+###################
+
+pme_d_worldwide_maglev = {
+	
+	is_for_colonizable = yes
+	should_swap_deposit_on_terraforming = no
+	use_for_min_max_adjustments = yes
+	category = deposit_cat_rare
+	
+	planet_modifier = {	
+
+		planet_pops_upkeep_mult = -0.20
+		pop_amenities_usage_mult = -0.15
+		trade_value_mult = 0.10
+		planet_jobs_unity_produces_mult = 0.10
+
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		modifier = {
+			job_enforcer_add = 2
+			job_clerk_add = 5
+		}
+	}
+
+	resources = {
+		category = planet_deposits
+		upkeep = {
+			energy = 15
+		}
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+
+}
+
+pme_d_polar_resource_silos = {
+
+	is_for_colonizable = yes
+	should_swap_deposit_on_terraforming = no
+	use_for_min_max_adjustments = yes
+	category = deposit_cat_rare
+
+	country_modifier = {
+		country_resource_max_add = 25000
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		modifier = {
+			job_soldier_add = 2
+			job_clerk_add = 2
+		}
+	}
+
+	resources = {
+		category = planet_deposits
+		upkeep = {
+			energy = 15
+		}
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+
+}
+
+pme_d_mining_construction = {
+	
+	is_for_colonizable = yes
+	should_swap_deposit_on_terraforming = no
+	use_for_min_max_adjustments = yes
+	category = deposit_cat_rare	
+
+	planet_modifier = {
+
+		planet_jobs_minerals_produces_mult = 0.25
+		planet_structures_upkeep_mult = -0.25
+		planet_building_build_speed_mult = 0.20
+		planet_structures_cost_mult = -0.20
+		planet_miners_minerals_produces_add = 2
+
+	}
+
+	inline_script = {
+		script = jobs/pme_miners_add
+		AMOUNT = 15
+	}
+
+	resources = {
+		category = planet_deposits
+		upkeep = {
+			energy = 15
+		}
+	}
+
+	drop_weight = {
+		weight = 0
+	}	
+
+}
+
+pme_d_planetary_irrigation_water = {
+	
+	is_for_colonizable = yes
+	should_swap_deposit_on_terraforming = no
+	use_for_min_max_adjustments = yes
+	category = deposit_cat_rare
+
+	planet_modifier = {
+
+		planet_jobs_food_produces_mult = 0.25
+		pop_growth_speed = 0.10
+		pop_happiness = 0.05
+		planet_farmers_food_produces_add = 2
+
+	}
+
+	inline_script = {
+		script = jobs/pme_farmers_add
+		FARMER_AMOUNT = 15
+		ANGLER_AMOUNT = 15
+	}
+
+	resources = {
+		category = planet_deposits
+		upkeep = {
+			energy = 15
+		}
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+
+}
+
+pme_d_planetary_fusion_grid = {
+	
+	is_for_colonizable = yes
+	should_swap_deposit_on_terraforming = no
+	use_for_min_max_adjustments = yes
+	category = deposit_cat_rare	
+
+	planet_modifier = {
+
+		planet_jobs_energy_produces_mult = 0.25	
+		planet_districts_energy_upkeep_mult = -0.15
+		planet_buildings_energy_upkeep_mult = -0.15
+		planet_technician_energy_produces_add = 2
+
+	}
+
+	inline_script = {
+		script = jobs/pme_technicians_add
+		AMOUNT = 20
+	}
+
+	resources = {
+		category = planet_deposits
+		upkeep = {
+			energy = 15
+		}
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+
+}
+
+###############################
+### Machine Empire Deposits ###
+###############################
+
+################
+### Advanced ###
+################
+
+pme_d_machine_global_management_nexus = {
+	
+	is_for_colonizable = yes
+	should_swap_deposit_on_terraforming = no
+	use_for_min_max_adjustments = yes
+	category = deposit_cat_rare	
+
+	country_modifier = {
+		envoys_add = 1
+		country_official_cap_add = 1
+	}
+
+
+	planet_modifier = {
+
+		planet_housing_add = 100
+		planet_crime_add = -50
+		planet_jobs_unity_produces_mult = 0.30
+		pop_amenities_usage_mult = -0.25
+		planet_jobs_specialist_produces_mult = 0.20
+		planet_stability_add = 15
+		planet_max_districts_add = 3
+
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_machine_empire = yes }
+		}
+		modifier = {
+			job_maintenance_drone_add = 15
+			job_coordinator_add = 25
+			job_patrol_drone_add = 10
+			job_replicator_add = 2
+		}
+	}
+
+	inline_script = {
+		script = jobs/pme_technicians_add
+		AMOUNT = 5
+	}
+
+	resources = {
+		category = planet_deposits
+		upkeep = {
+			energy = 60
+			alloys = 10
+		}
+	}
+
+	drop_weight = {
+		weight = 0
+	}	
+
+}
+
+pme_d_machine_orbital_colonies = {
+
+	is_for_colonizable = yes
+	should_swap_deposit_on_terraforming = no
+	use_for_min_max_adjustments = yes
+	category = deposit_cat_rare
+
+	planet_modifier = {
+
+		planet_housing_add = 50
+		planet_districts_cost_mult = -0.25
+		planet_max_districts_add = 10
+
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_machine_empire = yes }
+		}
+		modifier = {
+
+			job_maintenance_drone_add = 2
+			job_patrol_drone_add = 2
+			job_coordinator_add = 5
+		}
+	}
+
+	inline_script = {
+		script = jobs/pme_technicians_add
+		AMOUNT = 5
+	}
+
+	resources = {
+		category = planet_deposits
+		upkeep = {
+			energy = 60
+			alloys = 10
+		}
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+
+}
+
+pme_d_machine_fleet_coordination_systems = {
+
+	is_for_colonizable = yes
+	should_swap_deposit_on_terraforming = no
+	use_for_min_max_adjustments = yes
+	category = deposit_cat_rare	
+
+	country_modifier = {
+		country_commander_cap_add = 1
+		country_naval_cap_add = 100
+		ship_starting_experience_add = 350
+		ship_evasion_mult = 0.05
+		ship_accuracy_mult = 0.05
+		ship_weapon_range_mult = 0.05
+	}
+
+	planet_modifier = {
+
+		planet_housing_add = 10
+		planet_jobs_unity_produces_mult = 0.15
+
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_machine_empire = yes }
+		}
+		modifier = {
+			job_coordinator_add = 5
+			job_patrol_drone_add = 5
+			job_warrior_drone_add = 5
+			job_maintenance_drone_add = 2
+		}
+	}
+
+	resources = {
+		category = planet_deposits
+		upkeep = {
+			energy = 60
+			alloys = 10
+		}
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+
+}
+
+pme_d_machine_continental_computing_system = {
+	
+	is_for_colonizable = yes
+	should_swap_deposit_on_terraforming = no
+	use_for_min_max_adjustments = yes
+	category = deposit_cat_rare
+
+	country_modifier = {
+		country_scientist_cap_add = 1
+	}
+
+	planet_modifier = {
+
+		planet_jobs_physics_research_produces_mult = 0.35
+		planet_jobs_society_research_produces_mult = 0.35
+		planet_jobs_engineering_research_produces_mult = 0.35
+		planet_researchers_upkeep_mult = -0.25
+		planet_housing_add = 30
+
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_machine_empire = yes }
+		}
+		modifier = {
+			job_coordinator_add = 10
+		}
+	}
+
+	inline_script = {
+		script = jobs/pme_researchers_add
+		AMOUNT = 30
+	}
+
+	resources = {
+		category = planet_deposits
+		upkeep = {
+			energy = 60
+			alloys = 10
+		}
+	}
+
+	drop_weight = {
+		weight = 0
+	}	
+
+}
+
+pme_d_machine_planetwide_software_standardization_network = {
+	
+	is_for_colonizable = yes
+	should_swap_deposit_on_terraforming = no
+	use_for_min_max_adjustments = yes
+	category = deposit_cat_rare	
+
+	planet_modifier = {
+
+		planet_housing_add = 30
+		planet_jobs_unity_produces_mult = 0.15
+		planet_jobs_produces_mult = 0.15
+
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_machine_empire = yes }
+		}
+		modifier = {
+			job_coordinator_add = 10
+			job_patrol_drone_add = 2
+		}
+	}
+
+	resources = {
+		category = planet_deposits
+		upkeep = {
+			energy = 60
+			alloys = 10
+		}
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+
+}
+
+
+
+####################
+### Intermediate ###
+####################
+
+pme_d_machine_space_elevator = {
+	is_for_colonizable = yes
+	should_swap_deposit_on_terraforming = no
+	use_for_min_max_adjustments = yes
+	category = deposit_cat_rare
+	
+	planet_modifier = {
+		
+		planet_jobs_produces_mult = 0.10
+		planet_jobs_unity_produces_mult = 0.20
+		planet_housing_add = 5
+
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_machine_empire = yes }
+		}
+		modifier = {
+			job_maintenance_drone_add = 10
+			job_coordinator_add = 10
+			job_warrior_drone_add = 2
+		}
+	}
+
+	resources = {
+		category = planet_deposits
+		upkeep = {
+			energy = 30
+			alloys = 5
+		}
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+
+}
+
+pme_d_machine_drone_reprogramming_center = {
+	
+	is_for_colonizable = yes
+	should_swap_deposit_on_terraforming = no
+	use_for_min_max_adjustments = yes
+	category = deposit_cat_rare	
+	
+	planet_modifier = {
+
+		planet_crime_add = -50
+		planet_housing_add = 25
+		planet_stability_add = 10
+		planet_pops_upkeep_mult = -0.10
+
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_machine_empire = yes }
+		}
+		modifier = {
+			job_patrol_drone_add = 10
+			job_warrior_drone_add = 5
+			job_maintenance_drone_add = 2
+		}
+	}
+
+	resources = {
+		category = planet_deposits
+		upkeep = {
+			energy = 30
+			alloys = 5
+		}
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+
+}
+
+pme_d_machine_auxiliary_assembly_centers = {
+	
+	is_for_colonizable = yes
+	should_swap_deposit_on_terraforming = no
+	use_for_min_max_adjustments = yes
+	category = deposit_cat_rare	
+
+	planet_modifier = {
+
+		planet_housing_add = 25
+		planet_pop_assembly_mult = 0.10
+		planet_stability_add = 15
+
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_machine_empire = yes }
+		}
+		modifier = {
+			job_replicator_add = 5
+			job_coordinator_add = 5
+			job_patrol_drone_add = 2
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_individual_machine = yes }
+		}
+		modifier = {
+			job_roboticist_add = 5
+			job_culture_worker_add = 5
+			job_enforcer_add = 2
+		}
+	}
+
+	resources = {
+		category = planet_deposits
+		upkeep = {
+			energy = 30
+			alloys = 5
+		}
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+
+}
+
+pme_d_machine_subsurface_megaforges = {
+	
+	is_for_colonizable = yes
+	should_swap_deposit_on_terraforming = no
+	use_for_min_max_adjustments = yes
+	category = deposit_cat_rare	
+
+	planet_modifier = {
+
+		planet_jobs_alloys_produces_mult = 0.25
+		planet_orbital_bombardment_damage = -0.25
+		planet_structures_cost_mult = -0.10
+		planet_metallurgists_minerals_upkeep_add = -2
+		planet_metallurgists_alloys_produces_add = 1
+
+	}	
+
+	inline_script = {
+		script = jobs/pme_foundry_add
+		AMOUNT = 15
+	}
+
+	resources = {
+		category = planet_deposits
+		upkeep = {
+			energy = 30
+			alloys = 5
+		}
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+
+}
+
+pme_d_machine_chemical_hazardous_goods = {
+	
+	is_for_colonizable = yes
+	should_swap_deposit_on_terraforming = no
+	use_for_min_max_adjustments = yes
+	category = deposit_cat_rare
+
+	planet_modifier = {
+
+		planet_building_build_speed_mult = 0.15
+		planet_jobs_exotic_gases_produces_mult = 0.25
+		planet_jobs_rare_crystals_produces_mult = 0.25
+		planet_jobs_volatile_motes_produces_mult = 0.25
+
+	}	
+
+
+	inline_script = {
+		script = jobs/pme_chemist_add
+		AMOUNT = 5
+	}
+
+	inline_script = {
+		script = jobs/pme_refiner_add
+		AMOUNT = 5
+	}
+
+	inline_script = {
+		script = jobs/pme_translucer_add
+		AMOUNT = 5
+	}
+
+	resources = {
+		category = planet_deposits
+		upkeep = {
+			energy = 30
+			alloys = 5
+		}
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+}
+
+pme_d_machine_orbital_defense_grid = {
+	
+	is_for_colonizable = yes
+	should_swap_deposit_on_terraforming = no
+	use_for_min_max_adjustments = yes
+	category = deposit_cat_rare
+
+	planet_modifier = {
+
+	planet_orbital_bombardment_damage = -0.65
+	planet_stability_add = 10
+
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_machine_empire = yes }
+		}
+		modifier = {
+			job_warrior_drone_add = 10
+			job_patrol_drone_add = 5
+		}
+	}
+
+	resources = {
+		category = planet_deposits
+		upkeep = {
+			energy = 30
+			alloys = 5
+		}
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+
+}
+
+###################
+### Rudimentary ###
+###################
+
+pme_d_machine_worldwide_maglev = {
+	
+	is_for_colonizable = yes
+	should_swap_deposit_on_terraforming = no
+	use_for_min_max_adjustments = yes
+	category = deposit_cat_rare
+	
+	planet_modifier = {	
+
+		planet_pops_upkeep_mult = -0.20
+		pop_amenities_usage_mult = -0.15
+		planet_jobs_unity_produces_mult = 0.10
+
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_machine_empire = yes }
+		}
+		modifier = {
+			job_patrol_drone_add = 2
+			job_maintenance_drone_add = 5
+		}
+	}
+
+	resources = {
+		category = planet_deposits
+		upkeep = {
+			energy = 15
+		}
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+
+}
+
+pme_d_machine_polar_resource_silos = {
+
+	is_for_colonizable = yes
+	should_swap_deposit_on_terraforming = no
+	use_for_min_max_adjustments = yes
+	category = deposit_cat_rare
+
+	country_modifier = {
+		country_resource_max_add = 25000
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_machine_empire = yes }
+		}
+		modifier = {
+			job_warrior_drone_add = 2
+			job_maintenance_drone_add = 2
+		}
+	}
+
+	resources = {
+		category = planet_deposits
+		upkeep = {
+			energy = 15
+		}
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+
+}
+
+pme_d_machine_system_extraction = {
+	
+	is_for_colonizable = yes
+	should_swap_deposit_on_terraforming = no
+	use_for_min_max_adjustments = yes
+	category = deposit_cat_rare	
+
+	planet_modifier = {
+
+		planet_jobs_minerals_produces_mult = 0.25
+		planet_structures_upkeep_mult = -0.25
+		planet_building_build_speed_mult = 0.20
+		planet_structures_cost_mult = -0.20
+		planet_miners_minerals_produces_add = 2
+
+	}
+
+	inline_script = {
+		script = jobs/pme_miners_add
+		AMOUNT = 15
+	}
+
+	resources = {
+		category = planet_deposits
+		upkeep = {
+			energy = 15
+		}
+	}
+
+	drop_weight = {
+		weight = 0
+	}	
+
+}
+
+pme_d_machine_planetary_water_processing = {
+	
+	is_for_colonizable = yes
+	should_swap_deposit_on_terraforming = no
+	use_for_min_max_adjustments = yes
+	category = deposit_cat_rare
+
+	planet_modifier = {
+
+		planet_jobs_food_produces_mult = 0.25
+		pop_growth_speed = 0.10
+		pop_happiness = 0.05
+		planet_farmers_food_produces_add = 2
+
+	}
+
+	inline_script = {
+		script = jobs/pme_farmers_add
+		FARMER_AMOUNT = 15
+		ANGLER_AMOUNT = 15
+	}
+
+	resources = {
+		category = planet_deposits
+		upkeep = {
+			energy = 15
+		}
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+
+}
+
+pme_d_machine_planetary_fusion_grid = {
+	
+	is_for_colonizable = yes
+	should_swap_deposit_on_terraforming = no
+	use_for_min_max_adjustments = yes
+	category = deposit_cat_rare	
+
+	planet_modifier = {
+
+		planet_jobs_energy_produces_mult = 0.25	
+		planet_districts_energy_upkeep_mult = -0.15
+		planet_buildings_energy_upkeep_mult = -0.15
+		planet_technician_energy_produces_add = 2
+
+	}
+
+	inline_script = {
+		script = jobs/pme_technicians_add
+		AMOUNT = 20
+	}
+
+	resources = {
+		category = planet_deposits
+		upkeep = {
+			energy = 15
+		}
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+
+}
+
+##########################
+### Hive Mind Deposits ###
+##########################
+
+################
+### Advanced ###
+################
+
+pme_d_hive_planetary_coordination_nodes = {
+	
+	is_for_colonizable = yes
+	should_swap_deposit_on_terraforming = no
+	use_for_min_max_adjustments = yes
+	category = deposit_cat_rare	
+
+	country_modifier = {
+		envoys_add = 1
+		country_official_cap_add = 1
+	}
+
+
+	planet_modifier = {
+
+		planet_housing_add = 100
+		planet_crime_add = -50
+		planet_jobs_unity_produces_mult = 0.30
+		pop_amenities_usage_mult = -0.25
+		planet_jobs_specialist_produces_mult = 0.20
+		planet_stability_add = 15
+		planet_max_districts_add = 3
+
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_hive_empire = yes }
+		}
+		modifier = {
+			job_maintenance_drone_add = 15
+			job_synapse_drone_add = 25
+			job_patrol_drone_add = 10
+			job_spawning_drone_add = 2
+		}
+	}
+
+	inline_script = {
+		script = jobs/pme_technicians_add
+		AMOUNT = 5
+	}
+
+	resources = {
+		category = planet_deposits
+		upkeep = {
+			energy = 60
+			alloys = 10
+		}
+	}
+
+	drop_weight = {
+		weight = 0
+	}	
+
+}
+
+pme_d_hive_orbital_colonies = {
+
+	is_for_colonizable = yes
+	should_swap_deposit_on_terraforming = no
+	use_for_min_max_adjustments = yes
+	category = deposit_cat_rare
+
+	planet_modifier = {
+
+		planet_housing_add = 50
+		planet_districts_cost_mult = -0.25
+		planet_max_districts_add = 10
+
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_hive_empire = yes }
+		}
+		modifier = {
+
+			job_maintenance_drone_add = 2
+			job_patrol_drone_add = 2
+			job_synapse_drone_add = 5
+		}
+	}
+
+	inline_script = {
+		script = jobs/pme_technicians_add
+		AMOUNT = 5
+	}
+
+	resources = {
+		category = planet_deposits
+		upkeep = {
+			energy = 60
+			alloys = 10
+		}
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+
+}
+
+pme_d_hive_fleet_coordination_nexus = {
+
+	is_for_colonizable = yes
+	should_swap_deposit_on_terraforming = no
+	use_for_min_max_adjustments = yes
+	category = deposit_cat_rare	
+
+	country_modifier = {
+		country_commander_cap_add = 1
+		country_naval_cap_add = 100
+		ship_starting_experience_add = 350
+		ship_evasion_mult = 0.05
+		ship_accuracy_mult = 0.05
+		ship_weapon_range_mult = 0.05
+	}
+
+	planet_modifier = {
+
+		planet_housing_add = 10
+		planet_jobs_unity_produces_mult = 0.15
+
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_hive_empire = yes }
+		}
+		modifier = {
+			job_synapse_drone_add = 5
+			job_patrol_drone_add = 5
+			job_warrior_drone_add = 5
+			job_maintenance_drone_add = 2
+		}
+	}
+
+	resources = {
+		category = planet_deposits
+		upkeep = {
+			energy = 60
+			alloys = 10
+		}
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+
+}
+
+pme_d_hive_collective_computing_consciousness = {
+	
+	is_for_colonizable = yes
+	should_swap_deposit_on_terraforming = no
+	use_for_min_max_adjustments = yes
+	category = deposit_cat_rare
+
+	country_modifier = {
+		country_scientist_cap_add = 1
+	}
+
+	planet_modifier = {
+
+		planet_jobs_physics_research_produces_mult = 0.35
+		planet_jobs_society_research_produces_mult = 0.35
+		planet_jobs_engineering_research_produces_mult = 0.35
+		planet_researchers_upkeep_mult = -0.25
+		planet_housing_add = 30
+
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_hive_empire = yes }
+		}
+		modifier = {
+			job_synapse_drone_add = 10
+		}
+	}
+
+	inline_script = {
+		script = jobs/pme_researchers_add
+		AMOUNT = 30
+	}
+
+	resources = {
+		category = planet_deposits
+		upkeep = {
+			energy = 60
+			food = 30
+			alloys = 10
+		}
+	}
+
+	drop_weight = {
+		weight = 0
+	}	
+
+}
+
+pme_d_hive_consciousness_synchronization_lattice = {
+	
+	is_for_colonizable = yes
+	should_swap_deposit_on_terraforming = no
+	use_for_min_max_adjustments = yes
+	category = deposit_cat_rare	
+
+	planet_modifier = {
+
+		planet_housing_add = 30
+		planet_jobs_unity_produces_mult = 0.15
+		planet_jobs_produces_mult = 0.15
+
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_hive_empire = yes }
+		}
+		modifier = {
+			job_synapse_drone_add = 10
+			job_patrol_drone_add = 2
+		}
+	}
+
+	resources = {
+		category = planet_deposits
+		upkeep = {
+			energy = 60
+			alloys = 10
+		}
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+
+}
+
+####################
+### Intermediate ###
+####################
+
+pme_d_hive_space_elevator = {
+	is_for_colonizable = yes
+	should_swap_deposit_on_terraforming = no
+	use_for_min_max_adjustments = yes
+	category = deposit_cat_rare
+	
+	planet_modifier = {
+		
+		planet_jobs_produces_mult = 0.10
+		planet_jobs_unity_produces_mult = 0.20
+		planet_housing_add = 5
+
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_hive_empire = yes }
+		}
+		modifier = {
+			job_maintenance_drone_add = 10
+			job_synapse_drone_add = 10
+			job_warrior_drone_add = 2
+		}
+	}
+
+	resources = {
+		category = planet_deposits
+		upkeep = {
+			energy = 30
+			alloys = 5
+		}
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+
+}
+
+pme_d_hive_neural_regulation_nexus = {
+	
+	is_for_colonizable = yes
+	should_swap_deposit_on_terraforming = no
+	use_for_min_max_adjustments = yes
+	category = deposit_cat_rare	
+	
+	planet_modifier = {
+
+		planet_crime_add = -50
+		planet_housing_add = 25
+		planet_stability_add = 10
+		planet_pops_upkeep_mult = -0.10
+
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_hive_empire = yes }
+		}
+		modifier = {
+			job_patrol_drone_add = 10
+			job_warrior_drone_add = 5
+			job_maintenance_drone_add = 2
+		}
+	}
+
+	resources = {
+		category = planet_deposits
+		upkeep = {
+			energy = 30
+			alloys = 5
+		}
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+
+}
+
+pme_d_hive_supplemental_breeding_pools = {
+	
+	is_for_colonizable = yes
+	should_swap_deposit_on_terraforming = no
+	use_for_min_max_adjustments = yes
+	category = deposit_cat_rare	
+
+	planet_modifier = {
+
+		planet_housing_add = 25
+		pop_growth_speed = 0.20
+		planet_stability_add = 15
+
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_hive_empire = yes }
+		}
+		modifier = {
+			job_spawning_drone_add = 5
+			job_synapse_drone_add = 5
+			job_patrol_drone_add = 2
+		}
+	}
+
+	resources = {
+		category = planet_deposits
+		upkeep = {
+			energy = 30
+			alloys = 5
+		}
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+
+}
+
+pme_d_hive_subsurface_megaforges = {
+	
+	is_for_colonizable = yes
+	should_swap_deposit_on_terraforming = no
+	use_for_min_max_adjustments = yes
+	category = deposit_cat_rare	
+
+	planet_modifier = {
+
+		planet_jobs_alloys_produces_mult = 0.25
+		planet_orbital_bombardment_damage = -0.25
+		planet_structures_cost_mult = -0.10
+		planet_metallurgists_minerals_upkeep_add = -2
+		planet_metallurgists_alloys_produces_add = 1
+
+	}	
+
+	inline_script = {
+		script = jobs/pme_foundry_add
+		AMOUNT = 15
+	}
+
+	resources = {
+		category = planet_deposits
+		upkeep = {
+			energy = 30
+			alloys = 5
+		}
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+
+}
+
+pme_d_hive_chemical_hazardous_goods = {
+	
+	is_for_colonizable = yes
+	should_swap_deposit_on_terraforming = no
+	use_for_min_max_adjustments = yes
+	category = deposit_cat_rare
+
+	planet_modifier = {
+
+		planet_building_build_speed_mult = 0.15
+		planet_jobs_exotic_gases_produces_mult = 0.25
+		planet_jobs_rare_crystals_produces_mult = 0.25
+		planet_jobs_volatile_motes_produces_mult = 0.25
+
+	}	
+
+
+	inline_script = {
+		script = jobs/pme_chemist_add
+		AMOUNT = 5
+	}
+
+	inline_script = {
+		script = jobs/pme_refiner_add
+		AMOUNT = 5
+	}
+
+	inline_script = {
+		script = jobs/pme_translucer_add
+		AMOUNT = 5
+	}
+
+	resources = {
+		category = planet_deposits
+		upkeep = {
+			energy = 30
+			alloys = 5
+		}
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+}
+
+pme_d_hive_orbital_defense_grid = {
+	
+	is_for_colonizable = yes
+	should_swap_deposit_on_terraforming = no
+	use_for_min_max_adjustments = yes
+	category = deposit_cat_rare
+
+	planet_modifier = {
+
+	planet_orbital_bombardment_damage = -0.65
+	planet_stability_add = 10
+
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_hive_empire = yes }
+		}
+		modifier = {
+			job_warrior_drone_add = 10
+			job_patrol_drone_add = 5
+		}
+	}
+
+	resources = {
+		category = planet_deposits
+		upkeep = {
+			energy = 30
+			alloys = 5
+		}
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+
+}
+
+###################
+### Rudimentary ###
+###################
+
+pme_d_hive_worldwide_maglev = {
+	
+	is_for_colonizable = yes
+	should_swap_deposit_on_terraforming = no
+	use_for_min_max_adjustments = yes
+	category = deposit_cat_rare
+	
+	planet_modifier = {	
+
+		planet_pops_upkeep_mult = -0.20
+		pop_amenities_usage_mult = -0.15
+		planet_jobs_unity_produces_mult = 0.10
+
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_hive_empire = yes }
+		}
+		modifier = {
+			job_patrol_drone_add = 2
+			job_maintenance_drone_add = 5
+		}
+	}
+
+	resources = {
+		category = planet_deposits
+		upkeep = {
+			energy = 15
+		}
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+
+}
+
+pme_d_hive_polar_resource_silos = {
+
+	is_for_colonizable = yes
+	should_swap_deposit_on_terraforming = no
+	use_for_min_max_adjustments = yes
+	category = deposit_cat_rare
+
+	country_modifier = {
+		country_resource_max_add = 25000
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_hive_empire = yes }
+		}
+		modifier = {
+			job_warrior_drone_add = 2
+			job_maintenance_drone_add = 2
+		}
+	}
+
+	resources = {
+		category = planet_deposits
+		upkeep = {
+			energy = 15
+		}
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+
+}
+
+pme_d_hive_mineral_extraction_warrens = {
+	
+	is_for_colonizable = yes
+	should_swap_deposit_on_terraforming = no
+	use_for_min_max_adjustments = yes
+	category = deposit_cat_rare	
+
+	planet_modifier = {
+
+		planet_jobs_minerals_produces_mult = 0.25
+		planet_structures_upkeep_mult = -0.25
+		planet_building_build_speed_mult = 0.20
+		planet_structures_cost_mult = -0.20
+		planet_miners_minerals_produces_add = 2
+
+	}
+
+	inline_script = {
+		script = jobs/pme_miners_add
+		AMOUNT = 15
+	}
+
+	resources = {
+		category = planet_deposits
+		upkeep = {
+			energy = 15
+		}
+	}
+
+	drop_weight = {
+		weight = 0
+	}	
+
+}
+
+pme_d_hive_nutrient_processing_megaplant = {
+	
+	is_for_colonizable = yes
+	should_swap_deposit_on_terraforming = no
+	use_for_min_max_adjustments = yes
+	category = deposit_cat_rare
+
+	planet_modifier = {
+
+		planet_jobs_food_produces_mult = 0.25
+		pop_growth_speed = 0.10
+		pop_happiness = 0.05
+		planet_farmers_food_produces_add = 2
+
+	}
+
+	inline_script = {
+		script = jobs/pme_farmers_add
+		FARMER_AMOUNT = 15
+		ANGLER_AMOUNT = 15
+	}
+
+	resources = {
+		category = planet_deposits
+		upkeep = {
+			energy = 15
+		}
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+
+}
+
+pme_d_hive_planetary_fusion_grid = {
+	
+	is_for_colonizable = yes
+	should_swap_deposit_on_terraforming = no
+	use_for_min_max_adjustments = yes
+	category = deposit_cat_rare	
+
+	planet_modifier = {
+
+		planet_jobs_energy_produces_mult = 0.25	
+		planet_districts_energy_upkeep_mult = -0.15
+		planet_buildings_energy_upkeep_mult = -0.15
+		planet_technician_energy_produces_add = 2
+
+	}
+
+	inline_script = {
+		script = jobs/pme_technicians_add
+		AMOUNT = 20
+	}
+
+	resources = {
+		category = planet_deposits
+		upkeep = {
+			energy = 15
+		}
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+
+}
+
+##########################
+### Ascension Deposits ###
+##########################
+
+pme_d_psionic_shroud_emitter = {
+
+	is_for_colonizable = yes
+	should_swap_deposit_on_terraforming = no
+	use_for_min_max_adjustments = yes
+	category = deposit_cat_rare	
+
+	country_modifier = {
+		intel_encryption_add = 1
+		intel_decryption_add = 1
+	}
+
+	planet_modifier = {
+
+		planet_crime_add = -50
+		pop_government_ethic_attraction = 0.50
+		planet_jobs_produces_mult = 0.30
+		planet_jobs_unity_produces_mult = 0.20
+		pop_happiness = 0.15
+		planet_stability_add = 15
+
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+		}
+		modifier = {
+			job_telepath_add = 5
+		}
+	}
+
+	resources = {
+		category = planet_deposits
+		upkeep = {
+			energy = 60
+			alloys = 10
+		}
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+
+}
+
+pme_d_gene_preservation_vaults = {
+
+	is_for_colonizable = yes
+	should_swap_deposit_on_terraforming = no
+	use_for_min_max_adjustments = yes
+	category = deposit_cat_rare	
+
+	country_modifier = {
+		leader_lifespan_add = 25
+		species_leader_exp_gain = 0.25
+		BIOLOGICAL_species_trait_points_add = 1
+		BIOLOGICAL_species_trait_picks_add = 1
+	}
+
+	planet_modifier = {
+
+		planet_pop_assembly_organic_add = 15
+		planet_pop_assembly_mult = 0.10
+		pop_growth_speed = 0.25
+		planet_jobs_produces_mult = 0.25
+
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		modifier = {
+			job_healthcare_add = 5
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_hive_empire = yes }
+		}
+		modifier = {
+			job_spawning_drone_add = 3
+			job_offspring_drone_add = 3
+		}
+	}
+
+	resources = {
+		category = planet_deposits
+		upkeep = {
+			energy = 60
+			alloys = 10
+		}
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+
+}
+
+pme_d_orbital_robotics_assembly_labs = {
+
+	is_for_colonizable = yes
+	should_swap_deposit_on_terraforming = no
+	use_for_min_max_adjustments = yes
+	category = deposit_cat_rare	
+
+	country_modifier = {
+		ROBOT_species_trait_picks_add = 1
+		ROBOT_species_trait_points_add = 1
+	}
+
+	planet_modifier = {
+
+		planet_pop_assembly_mult = 0.15
+		planet_jobs_produces_mult = 0.20
+		planet_jobs_physics_research_produces_mult = 0.25
+		planet_jobs_society_research_produces_mult = 0.25
+		planet_jobs_engineering_research_produces_mult = 0.25
+
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		modifier = {
+			job_roboticist_add = 5
+		}
+	}
+
+	resources = {
+		category = planet_deposits
+		upkeep = {
+			energy = 60
+			alloys = 10
+		}
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+
+}
+
+pme_d_machine_orbital_robotics_assembly_labs = {
+
+	is_for_colonizable = yes
+	should_swap_deposit_on_terraforming = no
+	use_for_min_max_adjustments = yes
+	category = deposit_cat_rare	
+
+	country_modifier = {
+		ROBOT_species_trait_picks_add = 1
+		ROBOT_species_trait_points_add = 1
+	}
+
+	planet_modifier = {
+
+		planet_pop_assembly_mult = 0.15
+		planet_jobs_produces_mult = 0.20
+		planet_jobs_physics_research_produces_mult = 0.25
+		planet_jobs_society_research_produces_mult = 0.25
+		planet_jobs_engineering_research_produces_mult = 0.25
+
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_machine_empire = yes }
+		}
+		modifier = {
+			job_replicator_add = 5
+		}
+	}
+
+	resources = {
+		category = planet_deposits
+		upkeep = {
+			energy = 60
+			alloys = 10
+		}
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+
+}
+
+pme_d_cybernetics_uplink_facility = {
+
+	is_for_colonizable = yes
+	should_swap_deposit_on_terraforming = no
+	use_for_min_max_adjustments = yes
+	category = deposit_cat_rare	
+
+	country_modifier = {
+		army_starting_experience_add = 1000
+		planet_army_build_speed_mult = 1
+		BIOLOGICAL_species_trait_points_add = 1
+		ROBOT_species_trait_picks_add = 1
+	}
+
+	planet_modifier = {
+
+		planet_jobs_produces_mult = 0.20
+		planet_jobs_unity_produces_mult = 0.15
+		planet_pop_assembly_mult = 0.10
+		pop_growth_speed = 0.10
+		planet_jobs_physics_research_produces_mult = 0.10
+		planet_jobs_society_research_produces_mult = 0.10
+		planet_jobs_engineering_research_produces_mult = 0.10
+
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		modifier = {
+			job_augmentor_add = 4
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = yes }
+		}
+		modifier = {
+			job_augmentor_drone_add = 4
+		}
+	}
+
+	resources = {
+		category = planet_deposits
+		upkeep = {
+			energy = 60
+			alloys = 10
+		}
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+
+}

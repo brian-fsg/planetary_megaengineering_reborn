@@ -1,0 +1,35 @@
+triggered_planet_modifier = {
+	potential = {
+		exists = owner
+		owner = {
+			NOT = { has_valid_civic = civic_warrior_culture }
+			Not = { is_gestalt = yes }
+		}
+	}
+	modifier = {
+		job_entertainer_add = $AMOUNT$
+	}
+}
+
+triggered_planet_modifier = {
+	potential = {
+		exists = owner
+		owner = {
+			has_valid_civic = civic_warrior_culture
+			Not = { is_gestalt = yes }
+		}
+	}
+	modifier = {
+		job_duelist_add = $AMOUNT$
+	}
+}
+	
+triggered_planet_modifier = {
+	potential = {
+		exists = owner
+		owner = { is_gestalt = yes }
+	}
+	modifier = {
+		job_maintenance_drone_add = $AMOUNT$
+	}
+}

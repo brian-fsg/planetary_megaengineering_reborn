@@ -1,0 +1,53 @@
+#planet scope
+pme_run_origin_late_ftl_planet_gen = {
+	optimize_memory
+	clear_blockers = no
+
+	set_planet_flag = pme_is_developed_world
+	solar_system = { set_star_flag = pme_is_developed_system }
+
+	## Districts ##
+
+	add_district_and_planet_size_if_needed_effect = {
+		district = district_city
+		}
+	
+	add_district_and_planet_size_if_needed_effect = {
+		district = district_city
+		}
+
+	add_district_and_planet_size_if_needed_effect = {
+		district = district_industrial
+		}
+
+	add_district_and_planet_size_if_needed_effect = {
+		district = district_industrial
+		}
+
+	add_district_and_planet_size_if_needed_effect = {
+		district = district_mining
+		}
+
+	## Deposits ##
+
+	add_deposit = pme_d_space_elevator
+	add_deposit = pme_d_worldwide_maglev
+	add_deposit = pme_b_advanced_planetary_megastructure_ruins
+	add_deposit = pme_b_advanced_planetary_megastructure_ruins
+	add_deposit = d_decrepit_dwellings
+	add_deposit = d_failing_infrastructure
+
+	if = {
+		limit = {
+			owner = { has_origin = origin_pme_late_ftl }
+		}
+		while = {
+			count = 14
+			create_pop = {
+				species = owner_main_species
+				ethos = random
+			}
+		}
+	}
+
+}
