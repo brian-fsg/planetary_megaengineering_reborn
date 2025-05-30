@@ -36,7 +36,7 @@ decision_pme_mini_ecumenopolis = {
 	}
 
 	allow = {
-		num_pops > 100
+		sapient_pop_amount > 10000
 	}
 
 	effect = {
@@ -78,7 +78,7 @@ decision_pme_orbital_colonies = {
 	}
 
 	allow = {
-		num_pops > 80
+		sapient_pop_amount > 8000
 	}
 
 	effect = {
@@ -121,7 +121,7 @@ decision_pme_fleet_academy = {
 	}
 
 	allow = {
-		num_pops > 75
+		sapient_pop_amount > 7500
 	}
 
 	effect = {
@@ -164,7 +164,7 @@ decision_pme_university_cityscape = {
 	}
 
 	allow = {
-		num_pops > 70
+		sapient_pop_amount > 7000
 	}
 
 	effect = {
@@ -207,7 +207,7 @@ decision_pme_resort_archipelago = {
 	}
 
 	allow = {
-		num_pops > 65
+		sapient_pop_amount > 6500
 	}
 
 	effect = {
@@ -251,7 +251,7 @@ decision_pme_space_elevator = {
 	}
 
 	allow = {
-		num_pops > 50
+		sapient_pop_amount > 5000
 	}
 
 	effect = {
@@ -293,7 +293,7 @@ decision_pme_supermax_prison_rehab = {
 	}
 
 	allow = {
-		num_pops > 50
+		sapient_pop_amount > 5000
 	}
 
 	effect = {
@@ -336,7 +336,7 @@ decision_pme_interstellar_hospital = {
 	}
 
 	allow = {
-		num_pops > 50
+		sapient_pop_amount > 5000
 	}
 
 	effect = {
@@ -378,7 +378,7 @@ decision_pme_corporate_megacampus = {
 	}
 
 	allow = {
-		num_pops > 50
+		sapient_pop_amount > 5000
 	}
 
 	effect = {
@@ -419,7 +419,7 @@ decision_pme_subsurface_megaforges = {
 	}
 
 	allow = {
-		num_pops > 40
+		sapient_pop_amount > 4000
 	}
 
 	effect = {
@@ -460,7 +460,7 @@ decision_pme_orbital_superfactory = {
 	}
 
 	allow = {
-		num_pops > 40
+		sapient_pop_amount > 4000
 	}
 
 	effect = {
@@ -501,7 +501,7 @@ decision_pme_chemical_hazardous_goods = {
 	}
 
 	allow = {
-		num_pops > 40
+		sapient_pop_amount > 4000
 	}
 
 	effect = {
@@ -543,7 +543,7 @@ decision_pme_orbital_defense_grid = {
 	}
 
 	allow = {
-		num_pops > 40
+		sapient_pop_amount > 4000
 	}
 
 	effect = {
@@ -588,7 +588,7 @@ decision_pme_worldwide_maglev = {
 	}
 
 	allow = {
-		num_pops > 40
+		sapient_pop_amount > 4000
 	}
 
 	effect = {
@@ -628,7 +628,7 @@ decision_pme_polar_resource_silos = {
 	}
 
 	allow = {
-		num_pops > 30
+		sapient_pop_amount > 3000
 	}
 
 	effect = {
@@ -669,7 +669,7 @@ decision_pme_mining_construction = {
 	}
 
 	allow = {
-		num_pops > 25
+		sapient_pop_amount > 2500
 	}
 
 	effect = {
@@ -710,7 +710,7 @@ decision_pme_planetary_irrigation_water = {
 	}
 
 	allow = {
-		num_pops > 25
+		sapient_pop_amount > 2500
 	}
 
 	effect = {
@@ -751,7 +751,7 @@ decision_pme_planetary_fusion_grid = {
 	}
 
 	allow = {
-		num_pops > 25
+		sapient_pop_amount > 2500
 	}
 
 	effect = {
@@ -802,7 +802,7 @@ decision_pme_machine_global_management_nexus = {
 	}
 
 	allow = {
-		num_pops > 100
+		sapient_pop_amount > 10000
 	}
 
 	effect = {
@@ -844,7 +844,7 @@ decision_pme_machine_orbital_colonies = {
 	}
 
 	allow = {
-		num_pops > 80
+		sapient_pop_amount > 8000
 	}
 
 	effect = {
@@ -887,7 +887,7 @@ decision_pme_machine_fleet_coordination_systems = {
 	}
 
 	allow = {
-		num_pops > 75
+		sapient_pop_amount > 7500
 	}
 
 	effect = {
@@ -929,7 +929,7 @@ decision_pme_machine_continental_computing_system = {
 	}
 
 	allow = {
-		num_pops > 70
+		sapient_pop_amount > 7000
 	}
 
 	effect = {
@@ -972,7 +972,7 @@ decision_pme_machine_planetwide_software_standardization_network = {
 	}
 
 	allow = {
-		num_pops > 65
+		sapient_pop_amount > 6500
 	}
 
 	effect = {
@@ -1016,7 +1016,7 @@ decision_pme_machine_space_elevator = {
 	}
 
 	allow = {
-		num_pops > 50
+		sapient_pop_amount > 5000
 	}
 
 	effect = {
@@ -1058,7 +1058,7 @@ decision_pme_machine_drone_reprogramming_center = {
 	}
 
 	allow = {
-		num_pops > 50
+		sapient_pop_amount > 5000
 	}
 
 	effect = {
@@ -1103,7 +1103,7 @@ decision_pme_machine_auxiliary_assembly_centers = {
 	}
 
 	allow = {
-		num_pops > 50
+		sapient_pop_amount > 5000
 	}
 
 	effect = {
@@ -1144,7 +1144,7 @@ decision_pme_machine_subsurface_megaforges = {
 	}
 
 	allow = {
-		num_pops > 40
+		sapient_pop_amount > 4000
 	}
 
 	effect = {
@@ -1185,7 +1185,7 @@ decision_pme_machine_chemical_hazardous_goods = {
 	}
 
 	allow = {
-		num_pops > 40
+		sapient_pop_amount > 4000
 	}
 
 	effect = {
@@ -1227,7 +1227,7 @@ decision_pme_machine_orbital_defense_grid = {
 	}
 
 	allow = {
-		num_pops > 40
+		sapient_pop_amount > 4000
 	}
 
 	effect = {
@@ -1272,7 +1272,7 @@ decision_pme_machine_worldwide_maglev = {
 	}
 
 	allow = {
-		num_pops > 40
+		sapient_pop_amount > 4000
 	}
 
 	effect = {
@@ -1312,7 +1312,7 @@ decision_pme_machine_polar_resource_silos = {
 	}
 
 	allow = {
-		num_pops > 30
+		sapient_pop_amount > 3000
 	}
 
 	effect = {
@@ -1353,7 +1353,7 @@ decision_pme_machine_system_extraction = {
 	}
 
 	allow = {
-		num_pops > 25
+		sapient_pop_amount > 2500
 	}
 
 	effect = {
@@ -1394,7 +1394,7 @@ decision_pme_machine_planetary_water_processing = {
 	}
 
 	allow = {
-		num_pops > 25
+		sapient_pop_amount > 2500
 	}
 
 	effect = {
@@ -1435,7 +1435,7 @@ decision_pme_machine_planetary_fusion_grid = {
 	}
 
 	allow = {
-		num_pops > 25
+		sapient_pop_amount > 2500
 	}
 
 	effect = {
@@ -1486,7 +1486,7 @@ decision_pme_hive_planetary_coordination_nodes = {
 	}
 
 	allow = {
-		num_pops > 100
+		sapient_pop_amount > 10000
 	}
 
 	effect = {
@@ -1528,7 +1528,7 @@ decision_pme_hive_orbital_colonies = {
 	}
 
 	allow = {
-		num_pops > 80
+		sapient_pop_amount > 8000
 	}
 
 	effect = {
@@ -1571,7 +1571,7 @@ decision_pme_hive_fleet_coordination_nexus = {
 	}
 
 	allow = {
-		num_pops > 75
+		sapient_pop_amount > 7500
 	}
 
 	effect = {
@@ -1614,7 +1614,7 @@ decision_pme_hive_collective_computing_consciousness = {
 	}
 
 	allow = {
-		num_pops > 70
+		sapient_pop_amount > 7000
 	}
 
 	effect = {
@@ -1657,7 +1657,7 @@ decision_pme_hive_consciousness_synchronization_lattice = {
 	}
 
 	allow = {
-		num_pops > 65
+		sapient_pop_amount > 6500
 	}
 
 	effect = {
@@ -1701,7 +1701,7 @@ decision_pme_hive_space_elevator = {
 	}
 
 	allow = {
-		num_pops > 50
+		sapient_pop_amount > 5000
 	}
 
 	effect = {
@@ -1743,7 +1743,7 @@ decision_pme_hive_neural_regulation_nexus = {
 	}
 
 	allow = {
-		num_pops > 50
+		sapient_pop_amount > 5000
 	}
 
 	effect = {
@@ -1785,7 +1785,7 @@ decision_pme_hive_supplemental_breeding_pools = {
 	}
 
 	allow = {
-		num_pops > 50
+		sapient_pop_amount > 5000
 	}
 
 	effect = {
@@ -1826,7 +1826,7 @@ decision_pme_hive_subsurface_megaforges = {
 	}
 
 	allow = {
-		num_pops > 40
+		sapient_pop_amount > 4000
 	}
 
 	effect = {
@@ -1867,7 +1867,7 @@ decision_pme_hive_chemical_hazardous_goods = {
 	}
 
 	allow = {
-		num_pops > 40
+		sapient_pop_amount > 4000
 	}
 
 	effect = {
@@ -1909,7 +1909,7 @@ decision_pme_hive_orbital_defense_grid = {
 	}
 
 	allow = {
-		num_pops > 40
+		sapient_pop_amount > 4000
 	}
 
 	effect = {
@@ -1954,7 +1954,7 @@ decision_pme_hive_worldwide_maglev = {
 	}
 
 	allow = {
-		num_pops > 40
+		sapient_pop_amount > 4000
 	}
 
 	effect = {
@@ -1994,7 +1994,7 @@ decision_pme_hive_polar_resource_silos = {
 	}
 
 	allow = {
-		num_pops > 30
+		sapient_pop_amount > 3000
 	}
 
 	effect = {
@@ -2035,7 +2035,7 @@ decision_pme_hive_mineral_extraction_warrens = {
 	}
 
 	allow = {
-		num_pops > 25
+		sapient_pop_amount > 2500
 	}
 
 	effect = {
@@ -2076,7 +2076,7 @@ decision_pme_hive_nutrient_processing_megaplant = {
 	}
 
 	allow = {
-		num_pops > 25
+		sapient_pop_amount > 2500
 	}
 
 	effect = {
@@ -2117,7 +2117,7 @@ decision_pme_hive_planetary_fusion_grid = {
 	}
 
 	allow = {
-		num_pops > 25
+		sapient_pop_amount > 2500
 	}
 
 	effect = {
@@ -2169,7 +2169,7 @@ decision_pme_psionic_shroud_emitter = {
 	}
 
 	allow = {
-		num_pops > 40
+		sapient_pop_amount > 4000
 	}
 
 	ai_weight = {
@@ -2214,7 +2214,7 @@ decision_pme_gene_preservation_vaults = {
 	}
 
 	allow = {
-		num_pops > 40
+		sapient_pop_amount > 4000
 	}
 
 	ai_weight = {
@@ -2268,7 +2268,7 @@ decision_pme_orbital_robotics_assembly_labs = {
 	}
 
 	allow = {
-		num_pops > 40
+		sapient_pop_amount > 4000
 	}
 
 	ai_weight = {
@@ -2319,7 +2319,7 @@ decision_pme_machine_orbital_robotics_assembly_labs = {
 	}
 
 	allow = {
-		num_pops > 40
+		sapient_pop_amount > 4000
 	}
 
 	ai_weight = {
@@ -2362,7 +2362,7 @@ decision_pme_cybernetics_uplink_facility = {
 	}
 
 	allow = {
-		num_pops > 40
+		sapient_pop_amount > 4000
 	}
 
 	ai_weight = {

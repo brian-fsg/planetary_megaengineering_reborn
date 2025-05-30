@@ -1,7 +1,7 @@
-version="3.11"
+version="0.2"
 tags={
 	"Economy"
 }
-name="Planetary Mega Engineering"
-supported_version="v3.14.1592"
-remote_file_id="3193699928"
+name="Planetary Mega-Engineering Reborn"
+supported_version="v4.*"
+remote_file_id="3486985238"

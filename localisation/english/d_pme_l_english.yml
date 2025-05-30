@@ -56,7 +56,7 @@ pme_d_chemical_hazardous_goods:0 "Hazardous Materials Processing Superfactory"
 pme_d_chemical_hazardous_goods_desc:0 "The Planetary Administration has invested an incredible sum of money in this state-of-the-art hazardous materials recycling and reprocessing plant. This facility strips down technology and materials for anything useful, cycling nearly everything it processes through the economic system indefinitely."
 
 pme_d_polar_resource_silos:0 "Polar Resource Silos"
-pme_d_polar_resource_silos_desc:0 "These titanic storage silos, vaults, and warehouses were built to meet the ever-increasing need for materials storage on this planet. The entire complex is guarded by a small army's worth of well-trained soldiers and a similar number of labourers and clerks keep track of all that comes and goes from the site."
+pme_d_polar_resource_silos_desc:0 "These titanic storage silos, vaults, and warehouses were built to meet the ever-increasing need for materials storage on this planet. The entire complex is guarded by a small army's worth of well-trained soldiers and a similar number of labourers and traders keep track of all that comes and goes from the site."
 
 ########################
 ### Machine Deposits ###

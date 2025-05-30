@@ -20,7 +20,7 @@ pme_d_mini_ecumenopolis = {
 
 	planet_modifier = {
 
-		planet_housing_add = 100
+		planet_housing_add = 10000
 		pop_government_ethic_attraction = 0.30
 		planet_immigration_pull_mult = 0.25
 		planet_jobs_unity_produces_mult = 0.25
@@ -37,25 +37,23 @@ pme_d_mini_ecumenopolis = {
 			owner = { is_regular_empire = yes }
 		}
 		modifier = {
-			job_clerk_add = 15
-			job_bureaucrat_add = 10
-			job_trader_add = 5
-			job_enforcer_add = 5
-			job_politician_add = 5
-			job_merchant_add = 5
-			job_culture_worker_add = 5
-			job_healthcare_add = 5
+			job_bureaucrat_add = 1000
+			job_trader_add = 1500
+			job_enforcer_add = 500
+			job_politician_add = 500
+			job_bureaucrat_add = 500
+			job_healthcare_add = 500
 		}
 	}
 
 	inline_script = {
 		script = jobs/pme_entertainer_add
-		AMOUNT = 5
+		AMOUNT = 500
 	}
 
 	inline_script = {
 		script = jobs/pme_technicians_add
-		AMOUNT = 5
+		AMOUNT = 500
 	}
 
 	resources = {
@@ -84,7 +82,7 @@ pme_d_orbital_colonies = {
 
 	planet_modifier = {
 
-		planet_housing_add = 50
+		planet_housing_add = 5000
 		planet_districts_cost_mult = -0.25
 		planet_immigration_pull_mult = 0.15
 		planet_max_districts_add = 10
@@ -98,27 +96,27 @@ pme_d_orbital_colonies = {
 		}
 		modifier = {
 
-			job_clerk_add = 2
-			job_enforcer_add = 2
-			job_healthcare_add = 2
-			job_bureaucrat_add = 2
+			job_trader_add = 100
+			job_enforcer_add = 200
+			job_healthcare_add = 200
+			job_bureaucrat_add = 200
 		}
 	}
 
 	inline_script = {
 		script = jobs/pme_entertainer_add
-		AMOUNT = 2
+		AMOUNT = 200
 	}
 
 	inline_script = {
 		script = jobs/pme_technicians_add
-		AMOUNT = 5
+		AMOUNT = 500
 	}
 
 	inline_script = {
 		script = jobs/pme_farmers_add
-		FARMER_AMOUNT = 5
-		ANGLER_AMOUNT = 5
+		FARMER_AMOUNT = 500
+		ANGLER_AMOUNT = 500
 	}
 
 	resources = {
@@ -153,7 +151,7 @@ pme_d_fleet_academy = {
 
 	planet_modifier = {
 
-		planet_housing_add = 10
+		planet_housing_add = 1000
 		planet_jobs_unity_produces_mult = 0.15
 		pop_government_ethic_attraction = 0.15
 
@@ -165,10 +163,10 @@ pme_d_fleet_academy = {
 			owner = { is_regular_empire = yes }
 		}
 		modifier = {
-			job_bureaucrat_add = 5
-			job_enforcer_add = 5
-			job_soldier_add = 5
-			job_clerk_add = 2
+			job_bureaucrat_add = 500
+			job_enforcer_add = 500
+			job_soldier_add = 500
+			job_trader_add = 100
 		}
 	}
 
@@ -203,7 +201,7 @@ pme_d_university_cityscape = {
 		planet_jobs_society_research_produces_mult = 0.35
 		planet_jobs_engineering_research_produces_mult = 0.35
 		planet_researchers_upkeep_mult = -0.25
-		planet_housing_add = 30
+		planet_housing_add = 3000
 
 	}
 
@@ -213,19 +211,16 @@ pme_d_university_cityscape = {
 			owner = { is_regular_empire = yes }
 		}
 		modifier = {
-			job_head_researcher_add = 10
-			job_culture_worker_add = 5
+			job_bureaucrat_add = 500
+			job_physicist_add  = 1000
+			job_biologist_add  = 1000
+			job_engineer_add   = 1000
 		}
 	}
 
 	inline_script = {
 		script = jobs/pme_entertainer_add
-		AMOUNT = 5
-	}
-
-	inline_script = {
-		script = jobs/pme_researchers_add
-		AMOUNT = 15
+		AMOUNT = 500
 	}
 
 	resources = {
@@ -251,7 +246,7 @@ pme_d_resort_archipelago = {
 
 	planet_modifier = {
 
-		planet_housing_add = 30
+		planet_housing_add = 3000
 		planet_immigration_pull_mult = 0.35
 		planet_jobs_unity_produces_mult = 0.20
 		planet_culture_workers_produces_mult = 0.20
@@ -266,15 +261,15 @@ pme_d_resort_archipelago = {
 			owner = { is_regular_empire = yes }
 		}
 		modifier = {
-			job_culture_worker_add = 10
-			job_healthcare_add = 2
-			job_enforcer_add = 2
+			job_bureaucrat_add = 1000
+			job_healthcare_add = 200
+			job_enforcer_add = 200
 		}
 	}
 
 	inline_script = {
 		script = jobs/pme_entertainer_add
-		AMOUNT = 10
+		AMOUNT = 1000
 	}
 
 	resources = {
@@ -317,18 +312,17 @@ pme_d_space_elevator = {
 			owner = { is_regular_empire = yes }
 		}
 		modifier = {
-			job_merchant_add = 5
-			job_trader_add = 5
-			job_bureaucrat_add = 5
-			job_enforcer_add = 2
-			job_soldier_add = 2
+			job_trader_add = 1000
+			job_bureaucrat_add = 500
+			job_enforcer_add = 200
+			job_soldier_add = 200
 			
 		}
 	}
 
 	inline_script = {
 		script = jobs/pme_entertainer_add
-		AMOUNT = 2
+		AMOUNT = 200
 	}
 
 	resources = {
@@ -355,7 +349,7 @@ pme_d_supermax_prison_rehab = {
 	planet_modifier = {
 
 		planet_crime_add = -50
-		planet_housing_add = 25
+		planet_housing_add = 2500
 		planet_stability_add = 10
 		planet_structures_cost_mult = -0.10
 
@@ -367,9 +361,9 @@ pme_d_supermax_prison_rehab = {
 			owner = { is_regular_empire = yes }
 		}
 		modifier = {
-			job_enforcer_add = 10
-			job_soldier_add = 5
-			job_culture_worker_add = 2
+			job_enforcer_add = 1000
+			job_soldier_add = 500
+			job_bureaucrat_add = 200
 		}
 	}
 
@@ -396,7 +390,7 @@ pme_d_interstellar_hospital = {
 
 	planet_modifier = {
 
-		planet_housing_add = 25
+		planet_housing_add = 2500
 		pop_growth_speed = 0.20
 		pop_happiness = 0.15
 		planet_stability_add = 15
@@ -409,9 +403,9 @@ pme_d_interstellar_hospital = {
 			owner = { is_regular_empire = yes }
 		}
 		modifier = {
-			job_healthcare_add = 10
-			job_culture_worker_add = 5
-			job_enforcer_add = 2
+			job_healthcare_add = 1000
+			job_bureaucrat_add = 500
+			job_enforcer_add = 200
 		}
 	}
 
@@ -441,7 +435,7 @@ pme_d_corporate_megacampus = {
 		trade_value_mult = 0.30
 		planet_jobs_consumer_goods_produces_mult = 0.10
 		planet_jobs_alloys_produces_mult = 0.10
-		planet_housing_add = 10
+		planet_housing_add = 1000
 
 	}	
 
@@ -451,11 +445,9 @@ pme_d_corporate_megacampus = {
 			owner = { is_regular_empire = yes }
 		}
 		modifier = {
-			job_clerk_add = 5
-			job_trader_add = 10
-			job_bureaucrat_add = 5
-			job_merchant_add = 5
-			job_enforcer_add = 2
+			job_trader_add = 1800
+			job_bureaucrat_add = 500
+			job_enforcer_add = 200
 		}
 	}
 
@@ -492,7 +484,7 @@ pme_d_subsurface_megaforges = {
 
 	inline_script = {
 		script = jobs/pme_foundry_add
-		AMOUNT = 15
+		AMOUNT = 1500
 	}
 
 	resources = {
@@ -528,7 +520,7 @@ pme_d_orbital_superfactory = {
 
 	inline_script = {
 		script = jobs/pme_factory_add
-		AMOUNT = 15
+		AMOUNT = 1500
 	}
 
 	resources = {
@@ -564,17 +556,17 @@ pme_d_chemical_hazardous_goods = {
 
 	inline_script = {
 		script = jobs/pme_chemist_add
-		AMOUNT = 5
+		AMOUNT = 500
 	}
 
 	inline_script = {
 		script = jobs/pme_refiner_add
-		AMOUNT = 5
+		AMOUNT = 500
 	}
 
 	inline_script = {
 		script = jobs/pme_translucer_add
-		AMOUNT = 5
+		AMOUNT = 500
 	}
 
 	resources = {
@@ -610,8 +602,8 @@ pme_d_orbital_defense_grid = {
 			owner = { is_regular_empire = yes }
 		}
 		modifier = {
-			job_soldier_add = 10
-			job_enforcer_add = 5
+			job_soldier_add = 1000
+			job_enforcer_add = 500
 		}
 	}
 
@@ -655,8 +647,8 @@ pme_d_worldwide_maglev = {
 			owner = { is_regular_empire = yes }
 		}
 		modifier = {
-			job_enforcer_add = 2
-			job_clerk_add = 5
+			job_enforcer_add = 200
+			job_trader_add = 200
 		}
 	}
 
@@ -690,8 +682,8 @@ pme_d_polar_resource_silos = {
 			owner = { is_regular_empire = yes }
 		}
 		modifier = {
-			job_soldier_add = 2
-			job_clerk_add = 2
+			job_soldier_add = 200
+			job_trader_add = 100
 		}
 	}
 
@@ -727,7 +719,7 @@ pme_d_mining_construction = {
 
 	inline_script = {
 		script = jobs/pme_miners_add
-		AMOUNT = 15
+		AMOUNT = 1500
 	}
 
 	resources = {
@@ -761,8 +753,8 @@ pme_d_planetary_irrigation_water = {
 
 	inline_script = {
 		script = jobs/pme_farmers_add
-		FARMER_AMOUNT = 15
-		ANGLER_AMOUNT = 15
+		FARMER_AMOUNT = 1500
+		ANGLER_AMOUNT = 1500
 	}
 
 	resources = {
@@ -796,7 +788,7 @@ pme_d_planetary_fusion_grid = {
 
 	inline_script = {
 		script = jobs/pme_technicians_add
-		AMOUNT = 20
+		AMOUNT = 2000
 	}
 
 	resources = {
@@ -835,7 +827,7 @@ pme_d_machine_global_management_nexus = {
 
 	planet_modifier = {
 
-		planet_housing_add = 100
+		planet_housing_add = 10000
 		planet_crime_add = -50
 		planet_jobs_unity_produces_mult = 0.30
 		pop_amenities_usage_mult = -0.25
@@ -851,16 +843,16 @@ pme_d_machine_global_management_nexus = {
 			owner = { is_machine_empire = yes }
 		}
 		modifier = {
-			job_maintenance_drone_add = 15
-			job_coordinator_add = 25
-			job_patrol_drone_add = 10
-			job_replicator_add = 2
+			job_maintenance_drone_add = 1500
+			job_coordinator_add = 2500
+			job_patrol_drone_add = 1000
+			job_replicator_add = 200
 		}
 	}
 
 	inline_script = {
 		script = jobs/pme_technicians_add
-		AMOUNT = 5
+		AMOUNT = 500
 	}
 
 	resources = {
@@ -886,7 +878,7 @@ pme_d_machine_orbital_colonies = {
 
 	planet_modifier = {
 
-		planet_housing_add = 50
+		planet_housing_add = 5000
 		planet_districts_cost_mult = -0.25
 		planet_max_districts_add = 10
 
@@ -899,15 +891,15 @@ pme_d_machine_orbital_colonies = {
 		}
 		modifier = {
 
-			job_maintenance_drone_add = 2
-			job_patrol_drone_add = 2
-			job_coordinator_add = 5
+			job_maintenance_drone_add = 200
+			job_patrol_drone_add = 200
+			job_coordinator_add = 500
 		}
 	}
 
 	inline_script = {
 		script = jobs/pme_technicians_add
-		AMOUNT = 5
+		AMOUNT = 500
 	}
 
 	resources = {
@@ -942,7 +934,7 @@ pme_d_machine_fleet_coordination_systems = {
 
 	planet_modifier = {
 
-		planet_housing_add = 10
+		planet_housing_add = 1000
 		planet_jobs_unity_produces_mult = 0.15
 
 	}
@@ -953,10 +945,10 @@ pme_d_machine_fleet_coordination_systems = {
 			owner = { is_machine_empire = yes }
 		}
 		modifier = {
-			job_coordinator_add = 5
-			job_patrol_drone_add = 5
-			job_warrior_drone_add = 5
-			job_maintenance_drone_add = 2
+			job_coordinator_add = 500
+			job_patrol_drone_add = 500
+			job_warrior_drone_add = 500
+			job_maintenance_drone_add = 200
 		}
 	}
 
@@ -991,7 +983,7 @@ pme_d_machine_continental_computing_system = {
 		planet_jobs_society_research_produces_mult = 0.35
 		planet_jobs_engineering_research_produces_mult = 0.35
 		planet_researchers_upkeep_mult = -0.25
-		planet_housing_add = 30
+		planet_housing_add = 3000
 
 	}
 
@@ -1001,13 +993,9 @@ pme_d_machine_continental_computing_system = {
 			owner = { is_machine_empire = yes }
 		}
 		modifier = {
-			job_coordinator_add = 10
+			job_coordinator_add = 500
+			job_calculator_add  = 3000
 		}
-	}
-
-	inline_script = {
-		script = jobs/pme_researchers_add
-		AMOUNT = 30
 	}
 
 	resources = {
@@ -1033,7 +1021,7 @@ pme_d_machine_planetwide_software_standardization_network = {
 
 	planet_modifier = {
 
-		planet_housing_add = 30
+		planet_housing_add = 3000
 		planet_jobs_unity_produces_mult = 0.15
 		planet_jobs_produces_mult = 0.15
 
@@ -1045,8 +1033,8 @@ pme_d_machine_planetwide_software_standardization_network = {
 			owner = { is_machine_empire = yes }
 		}
 		modifier = {
-			job_coordinator_add = 10
-			job_patrol_drone_add = 2
+			job_coordinator_add = 1000
+			job_patrol_drone_add = 200
 		}
 	}
 
@@ -1080,7 +1068,7 @@ pme_d_machine_space_elevator = {
 		
 		planet_jobs_produces_mult = 0.10
 		planet_jobs_unity_produces_mult = 0.20
-		planet_housing_add = 5
+		planet_housing_add = 500
 
 	}
 
@@ -1090,9 +1078,9 @@ pme_d_machine_space_elevator = {
 			owner = { is_machine_empire = yes }
 		}
 		modifier = {
-			job_maintenance_drone_add = 10
-			job_coordinator_add = 10
-			job_warrior_drone_add = 2
+			job_maintenance_drone_add = 1000
+			job_coordinator_add = 1000
+			job_warrior_drone_add = 200
 		}
 	}
 
@@ -1120,7 +1108,7 @@ pme_d_machine_drone_reprogramming_center = {
 	planet_modifier = {
 
 		planet_crime_add = -50
-		planet_housing_add = 25
+		planet_housing_add = 2500
 		planet_stability_add = 10
 		planet_pops_upkeep_mult = -0.10
 
@@ -1132,9 +1120,9 @@ pme_d_machine_drone_reprogramming_center = {
 			owner = { is_machine_empire = yes }
 		}
 		modifier = {
-			job_patrol_drone_add = 10
-			job_warrior_drone_add = 5
-			job_maintenance_drone_add = 2
+			job_patrol_drone_add = 1000
+			job_warrior_drone_add = 500
+			job_maintenance_drone_add = 200
 		}
 	}
 
@@ -1161,7 +1149,7 @@ pme_d_machine_auxiliary_assembly_centers = {
 
 	planet_modifier = {
 
-		planet_housing_add = 25
+		planet_housing_add = 2500
 		planet_pop_assembly_mult = 0.10
 		planet_stability_add = 15
 
@@ -1173,9 +1161,9 @@ pme_d_machine_auxiliary_assembly_centers = {
 			owner = { is_machine_empire = yes }
 		}
 		modifier = {
-			job_replicator_add = 5
-			job_coordinator_add = 5
-			job_patrol_drone_add = 2
+			job_replicator_add = 500
+			job_coordinator_add = 500
+			job_patrol_drone_add = 200
 		}
 	}
 
@@ -1185,9 +1173,9 @@ pme_d_machine_auxiliary_assembly_centers = {
 			owner = { is_individual_machine = yes }
 		}
 		modifier = {
-			job_roboticist_add = 5
-			job_culture_worker_add = 5
-			job_enforcer_add = 2
+			job_roboticist_add = 500
+			job_bureaucrat_add = 500
+			job_enforcer_add = 200
 		}
 	}
 
@@ -1224,7 +1212,7 @@ pme_d_machine_subsurface_megaforges = {
 
 	inline_script = {
 		script = jobs/pme_foundry_add
-		AMOUNT = 15
+		AMOUNT = 1500
 	}
 
 	resources = {
@@ -1260,17 +1248,17 @@ pme_d_machine_chemical_hazardous_goods = {
 
 	inline_script = {
 		script = jobs/pme_chemist_add
-		AMOUNT = 5
+		AMOUNT = 500
 	}
 
 	inline_script = {
 		script = jobs/pme_refiner_add
-		AMOUNT = 5
+		AMOUNT = 500
 	}
 
 	inline_script = {
 		script = jobs/pme_translucer_add
-		AMOUNT = 5
+		AMOUNT = 500
 	}
 
 	resources = {
@@ -1306,8 +1294,8 @@ pme_d_machine_orbital_defense_grid = {
 			owner = { is_machine_empire = yes }
 		}
 		modifier = {
-			job_warrior_drone_add = 10
-			job_patrol_drone_add = 5
+			job_warrior_drone_add = 1000
+			job_patrol_drone_add = 500
 		}
 	}
 
@@ -1350,8 +1338,8 @@ pme_d_machine_worldwide_maglev = {
 			owner = { is_machine_empire = yes }
 		}
 		modifier = {
-			job_patrol_drone_add = 2
-			job_maintenance_drone_add = 5
+			job_patrol_drone_add = 200
+			job_maintenance_drone_add = 500
 		}
 	}
 
@@ -1385,8 +1373,8 @@ pme_d_machine_polar_resource_silos = {
 			owner = { is_machine_empire = yes }
 		}
 		modifier = {
-			job_warrior_drone_add = 2
-			job_maintenance_drone_add = 2
+			job_warrior_drone_add = 200
+			job_maintenance_drone_add = 200
 		}
 	}
 
@@ -1422,7 +1410,7 @@ pme_d_machine_system_extraction = {
 
 	inline_script = {
 		script = jobs/pme_miners_add
-		AMOUNT = 15
+		AMOUNT = 1500
 	}
 
 	resources = {
@@ -1456,8 +1444,8 @@ pme_d_machine_planetary_water_processing = {
 
 	inline_script = {
 		script = jobs/pme_farmers_add
-		FARMER_AMOUNT = 15
-		ANGLER_AMOUNT = 15
+		FARMER_AMOUNT = 1500
+		ANGLER_AMOUNT = 1500
 	}
 
 	resources = {
@@ -1491,7 +1479,7 @@ pme_d_machine_planetary_fusion_grid = {
 
 	inline_script = {
 		script = jobs/pme_technicians_add
-		AMOUNT = 20
+		AMOUNT = 2000
 	}
 
 	resources = {
@@ -1530,7 +1518,7 @@ pme_d_hive_planetary_coordination_nodes = {
 
 	planet_modifier = {
 
-		planet_housing_add = 100
+		planet_housing_add = 10000
 		planet_crime_add = -50
 		planet_jobs_unity_produces_mult = 0.30
 		pop_amenities_usage_mult = -0.25
@@ -1546,16 +1534,16 @@ pme_d_hive_planetary_coordination_nodes = {
 			owner = { is_hive_empire = yes }
 		}
 		modifier = {
-			job_maintenance_drone_add = 15
-			job_synapse_drone_add = 25
-			job_patrol_drone_add = 10
-			job_spawning_drone_add = 2
+			job_maintenance_drone_add = 1500
+			job_synapse_drone_add = 2500
+			job_patrol_drone_add = 1000
+			job_spawning_drone_add = 200
 		}
 	}
 
 	inline_script = {
 		script = jobs/pme_technicians_add
-		AMOUNT = 5
+		AMOUNT = 500
 	}
 
 	resources = {
@@ -1581,7 +1569,7 @@ pme_d_hive_orbital_colonies = {
 
 	planet_modifier = {
 
-		planet_housing_add = 50
+		planet_housing_add = 5000
 		planet_districts_cost_mult = -0.25
 		planet_max_districts_add = 10
 
@@ -1594,15 +1582,15 @@ pme_d_hive_orbital_colonies = {
 		}
 		modifier = {
 
-			job_maintenance_drone_add = 2
-			job_patrol_drone_add = 2
-			job_synapse_drone_add = 5
+			job_maintenance_drone_add = 200
+			job_patrol_drone_add = 200
+			job_synapse_drone_add = 500
 		}
 	}
 
 	inline_script = {
 		script = jobs/pme_technicians_add
-		AMOUNT = 5
+		AMOUNT = 500
 	}
 
 	resources = {
@@ -1637,7 +1625,7 @@ pme_d_hive_fleet_coordination_nexus = {
 
 	planet_modifier = {
 
-		planet_housing_add = 10
+		planet_housing_add = 1000
 		planet_jobs_unity_produces_mult = 0.15
 
 	}
@@ -1648,10 +1636,10 @@ pme_d_hive_fleet_coordination_nexus = {
 			owner = { is_hive_empire = yes }
 		}
 		modifier = {
-			job_synapse_drone_add = 5
-			job_patrol_drone_add = 5
-			job_warrior_drone_add = 5
-			job_maintenance_drone_add = 2
+			job_synapse_drone_add = 500
+			job_patrol_drone_add = 500
+			job_warrior_drone_add = 500
+			job_maintenance_drone_add = 200
 		}
 	}
 
@@ -1686,7 +1674,7 @@ pme_d_hive_collective_computing_consciousness = {
 		planet_jobs_society_research_produces_mult = 0.35
 		planet_jobs_engineering_research_produces_mult = 0.35
 		planet_researchers_upkeep_mult = -0.25
-		planet_housing_add = 30
+		planet_housing_add = 3000
 
 	}
 
@@ -1696,13 +1684,9 @@ pme_d_hive_collective_computing_consciousness = {
 			owner = { is_hive_empire = yes }
 		}
 		modifier = {
-			job_synapse_drone_add = 10
+			job_synapse_drone_add = 500
+			job_brain_drone_add   = 3000
 		}
-	}
-
-	inline_script = {
-		script = jobs/pme_researchers_add
-		AMOUNT = 30
 	}
 
 	resources = {
@@ -1729,7 +1713,7 @@ pme_d_hive_consciousness_synchronization_lattice = {
 
 	planet_modifier = {
 
-		planet_housing_add = 30
+		planet_housing_add = 3000
 		planet_jobs_unity_produces_mult = 0.15
 		planet_jobs_produces_mult = 0.15
 
@@ -1741,8 +1725,8 @@ pme_d_hive_consciousness_synchronization_lattice = {
 			owner = { is_hive_empire = yes }
 		}
 		modifier = {
-			job_synapse_drone_add = 10
-			job_patrol_drone_add = 2
+			job_synapse_drone_add = 1000
+			job_patrol_drone_add = 200
 		}
 	}
 
@@ -1774,7 +1758,7 @@ pme_d_hive_space_elevator = {
 		
 		planet_jobs_produces_mult = 0.10
 		planet_jobs_unity_produces_mult = 0.20
-		planet_housing_add = 5
+		planet_housing_add = 500
 
 	}
 
@@ -1784,9 +1768,9 @@ pme_d_hive_space_elevator = {
 			owner = { is_hive_empire = yes }
 		}
 		modifier = {
-			job_maintenance_drone_add = 10
-			job_synapse_drone_add = 10
-			job_warrior_drone_add = 2
+			job_maintenance_drone_add = 1000
+			job_synapse_drone_add = 1000
+			job_warrior_drone_add = 200
 		}
 	}
 
@@ -1814,7 +1798,7 @@ pme_d_hive_neural_regulation_nexus = {
 	planet_modifier = {
 
 		planet_crime_add = -50
-		planet_housing_add = 25
+		planet_housing_add = 2500
 		planet_stability_add = 10
 		planet_pops_upkeep_mult = -0.10
 
@@ -1826,9 +1810,9 @@ pme_d_hive_neural_regulation_nexus = {
 			owner = { is_hive_empire = yes }
 		}
 		modifier = {
-			job_patrol_drone_add = 10
-			job_warrior_drone_add = 5
-			job_maintenance_drone_add = 2
+			job_patrol_drone_add = 1000
+			job_warrior_drone_add = 500
+			job_maintenance_drone_add = 200
 		}
 	}
 
@@ -1855,7 +1839,7 @@ pme_d_hive_supplemental_breeding_pools = {
 
 	planet_modifier = {
 
-		planet_housing_add = 25
+		planet_housing_add = 2500
 		pop_growth_speed = 0.20
 		planet_stability_add = 15
 
@@ -1867,9 +1851,9 @@ pme_d_hive_supplemental_breeding_pools = {
 			owner = { is_hive_empire = yes }
 		}
 		modifier = {
-			job_spawning_drone_add = 5
-			job_synapse_drone_add = 5
-			job_patrol_drone_add = 2
+			job_spawning_drone_add = 500
+			job_synapse_drone_add = 500
+			job_patrol_drone_add = 200
 		}
 	}
 
@@ -1906,7 +1890,7 @@ pme_d_hive_subsurface_megaforges = {
 
 	inline_script = {
 		script = jobs/pme_foundry_add
-		AMOUNT = 15
+		AMOUNT = 1500
 	}
 
 	resources = {
@@ -1942,17 +1926,17 @@ pme_d_hive_chemical_hazardous_goods = {
 
 	inline_script = {
 		script = jobs/pme_chemist_add
-		AMOUNT = 5
+		AMOUNT = 500
 	}
 
 	inline_script = {
 		script = jobs/pme_refiner_add
-		AMOUNT = 5
+		AMOUNT = 500
 	}
 
 	inline_script = {
 		script = jobs/pme_translucer_add
-		AMOUNT = 5
+		AMOUNT = 500
 	}
 
 	resources = {
@@ -1988,8 +1972,8 @@ pme_d_hive_orbital_defense_grid = {
 			owner = { is_hive_empire = yes }
 		}
 		modifier = {
-			job_warrior_drone_add = 10
-			job_patrol_drone_add = 5
+			job_warrior_drone_add = 1000
+			job_patrol_drone_add = 500
 		}
 	}
 
@@ -2032,8 +2016,8 @@ pme_d_hive_worldwide_maglev = {
 			owner = { is_hive_empire = yes }
 		}
 		modifier = {
-			job_patrol_drone_add = 2
-			job_maintenance_drone_add = 5
+			job_patrol_drone_add = 200
+			job_maintenance_drone_add = 500
 		}
 	}
 
@@ -2067,8 +2051,8 @@ pme_d_hive_polar_resource_silos = {
 			owner = { is_hive_empire = yes }
 		}
 		modifier = {
-			job_warrior_drone_add = 2
-			job_maintenance_drone_add = 2
+			job_warrior_drone_add = 200
+			job_maintenance_drone_add = 200
 		}
 	}
 
@@ -2104,7 +2088,7 @@ pme_d_hive_mineral_extraction_warrens = {
 
 	inline_script = {
 		script = jobs/pme_miners_add
-		AMOUNT = 15
+		AMOUNT = 1500
 	}
 
 	resources = {
@@ -2138,8 +2122,8 @@ pme_d_hive_nutrient_processing_megaplant = {
 
 	inline_script = {
 		script = jobs/pme_farmers_add
-		FARMER_AMOUNT = 15
-		ANGLER_AMOUNT = 15
+		FARMER_AMOUNT = 1500
+		ANGLER_AMOUNT = 1500
 	}
 
 	resources = {
@@ -2173,7 +2157,7 @@ pme_d_hive_planetary_fusion_grid = {
 
 	inline_script = {
 		script = jobs/pme_technicians_add
-		AMOUNT = 20
+		AMOUNT = 2000
 	}
 
 	resources = {
@@ -2221,7 +2205,7 @@ pme_d_psionic_shroud_emitter = {
 			exists = owner
 		}
 		modifier = {
-			job_telepath_add = 5
+			job_telepath_add = 500
 		}
 	}
 
@@ -2268,7 +2252,7 @@ pme_d_gene_preservation_vaults = {
 			owner = { is_regular_empire = yes }
 		}
 		modifier = {
-			job_healthcare_add = 5
+			job_healthcare_add = 500
 		}
 	}
 
@@ -2278,8 +2262,8 @@ pme_d_gene_preservation_vaults = {
 			owner = { is_hive_empire = yes }
 		}
 		modifier = {
-			job_spawning_drone_add = 3
-			job_offspring_drone_add = 3
+			job_spawning_drone_add = 300
+			job_offspring_drone_add = 300
 		}
 	}
 
@@ -2325,7 +2309,7 @@ pme_d_orbital_robotics_assembly_labs = {
 			owner = { is_regular_empire = yes }
 		}
 		modifier = {
-			job_roboticist_add = 5
+			job_roboticist_add = 500
 		}
 	}
 
@@ -2371,7 +2355,7 @@ pme_d_machine_orbital_robotics_assembly_labs = {
 			owner = { is_machine_empire = yes }
 		}
 		modifier = {
-			job_replicator_add = 5
+			job_replicator_add = 500
 		}
 	}
 
@@ -2421,7 +2405,7 @@ pme_d_cybernetics_uplink_facility = {
 			owner = { is_regular_empire = yes }
 		}
 		modifier = {
-			job_augmentor_add = 4
+			job_augmentor_add = 400
 		}
 	}
 
@@ -2431,7 +2415,7 @@ pme_d_cybernetics_uplink_facility = {
 			owner = { is_gestalt = yes }
 		}
 		modifier = {
-			job_augmentor_drone_add = 4
+			job_augmentor_drone_add = 400
 		}
 	}
 
