@@ -843,7 +843,7 @@ pme_d_machine_global_management_nexus = {
 			owner = { is_machine_empire = yes }
 		}
 		modifier = {
-			job_maintenance_drone_add = 1500
+			job_logistics_drone_add = 1500
 			job_coordinator_add = 2500
 			job_patrol_drone_add = 1000
 			job_replicator_add = 200
@@ -891,7 +891,7 @@ pme_d_machine_orbital_colonies = {
 		}
 		modifier = {
 
-			job_maintenance_drone_add = 200
+			job_logistics_drone_add = 200
 			job_patrol_drone_add = 200
 			job_coordinator_add = 500
 		}
@@ -948,7 +948,7 @@ pme_d_machine_fleet_coordination_systems = {
 			job_coordinator_add = 500
 			job_patrol_drone_add = 500
 			job_warrior_drone_add = 500
-			job_maintenance_drone_add = 200
+			job_logistics_drone_add = 200
 		}
 	}
 
@@ -1078,7 +1078,7 @@ pme_d_machine_space_elevator = {
 			owner = { is_machine_empire = yes }
 		}
 		modifier = {
-			job_maintenance_drone_add = 1000
+			job_logistics_drone_add = 1000
 			job_coordinator_add = 1000
 			job_warrior_drone_add = 200
 		}
@@ -1122,7 +1122,7 @@ pme_d_machine_drone_reprogramming_center = {
 		modifier = {
 			job_patrol_drone_add = 1000
 			job_warrior_drone_add = 500
-			job_maintenance_drone_add = 200
+			job_logistics_drone_add = 200
 		}
 	}
 
@@ -1339,7 +1339,7 @@ pme_d_machine_worldwide_maglev = {
 		}
 		modifier = {
 			job_patrol_drone_add = 200
-			job_maintenance_drone_add = 500
+			job_logistics_drone_add = 500
 		}
 	}
 
@@ -1374,7 +1374,7 @@ pme_d_machine_polar_resource_silos = {
 		}
 		modifier = {
 			job_warrior_drone_add = 200
-			job_maintenance_drone_add = 200
+			job_logistics_drone_add = 200
 		}
 	}
 
@@ -1534,7 +1534,7 @@ pme_d_hive_planetary_coordination_nodes = {
 			owner = { is_hive_empire = yes }
 		}
 		modifier = {
-			job_maintenance_drone_add = 1500
+			job_logistics_drone_add = 1500
 			job_synapse_drone_add = 2500
 			job_patrol_drone_add = 1000
 			job_spawning_drone_add = 200
@@ -1582,7 +1582,7 @@ pme_d_hive_orbital_colonies = {
 		}
 		modifier = {
 
-			job_maintenance_drone_add = 200
+			job_logistics_drone_add = 200
 			job_patrol_drone_add = 200
 			job_synapse_drone_add = 500
 		}
@@ -1639,7 +1639,7 @@ pme_d_hive_fleet_coordination_nexus = {
 			job_synapse_drone_add = 500
 			job_patrol_drone_add = 500
 			job_warrior_drone_add = 500
-			job_maintenance_drone_add = 200
+			job_logistics_drone_add = 200
 		}
 	}
 
@@ -1768,7 +1768,7 @@ pme_d_hive_space_elevator = {
 			owner = { is_hive_empire = yes }
 		}
 		modifier = {
-			job_maintenance_drone_add = 1000
+			job_logistics_drone_add = 1000
 			job_synapse_drone_add = 1000
 			job_warrior_drone_add = 200
 		}
@@ -1812,7 +1812,7 @@ pme_d_hive_neural_regulation_nexus = {
 		modifier = {
 			job_patrol_drone_add = 1000
 			job_warrior_drone_add = 500
-			job_maintenance_drone_add = 200
+			job_logistics_drone_add = 200
 		}
 	}
 
@@ -2017,7 +2017,7 @@ pme_d_hive_worldwide_maglev = {
 		}
 		modifier = {
 			job_patrol_drone_add = 200
-			job_maintenance_drone_add = 500
+			job_logistics_drone_add = 500
 		}
 	}
 
@@ -2052,7 +2052,7 @@ pme_d_hive_polar_resource_silos = {
 		}
 		modifier = {
 			job_warrior_drone_add = 200
-			job_maintenance_drone_add = 200
+			job_logistics_drone_add = 200
 		}
 	}
 
