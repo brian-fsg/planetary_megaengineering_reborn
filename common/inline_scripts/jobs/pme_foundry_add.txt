@@ -20,7 +20,7 @@ triggered_planet_modifier = {
 		}
 	}
 	modifier = {
-		job_catalytic_technician_add = $AMOUNT$
+		job_foundry_add = $AMOUNT$
 	}
 }
 
@@ -59,6 +59,6 @@ triggered_planet_modifier = {
 		}
 	}
 	modifier = {
-		job_catalytic_drone_add = $AMOUNT$
+		job_foundry_add = $AMOUNT$
 	}
 }
