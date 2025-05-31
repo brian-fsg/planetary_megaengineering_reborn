@@ -847,12 +847,8 @@ pme_d_machine_global_management_nexus = {
 			job_coordinator_add = 2500
 			job_patrol_drone_add = 1000
 			job_replicator_add = 200
+			job_technician_drone_add = 500
 		}
-	}
-
-	inline_script = {
-		script = jobs/pme_technicians_add
-		AMOUNT = 500
 	}
 
 	resources = {
@@ -894,12 +890,8 @@ pme_d_machine_orbital_colonies = {
 			job_logistics_drone_add = 200
 			job_patrol_drone_add = 200
 			job_coordinator_add = 500
+			job_technician_drone_add = 500
 		}
-	}
-
-	inline_script = {
-		script = jobs/pme_technicians_add
-		AMOUNT = 500
 	}
 
 	resources = {
@@ -1535,7 +1527,6 @@ pme_d_hive_planetary_coordination_nodes = {
 		}
 		modifier = {
 			job_logistics_drone_add = 1500
-			job_synapse_drone_add = 2500
 			job_patrol_drone_add = 1000
 			job_spawning_drone_add = 200
 		}
@@ -1544,6 +1535,11 @@ pme_d_hive_planetary_coordination_nodes = {
 	inline_script = {
 		script = jobs/pme_technicians_add
 		AMOUNT = 500
+	}
+	
+	inline_script = {
+		script = jobs/pme_unity_jobs_add
+		AMOUNT = 2500
 	}
 
 	resources = {
@@ -1584,12 +1580,16 @@ pme_d_hive_orbital_colonies = {
 
 			job_logistics_drone_add = 200
 			job_patrol_drone_add = 200
-			job_synapse_drone_add = 500
 		}
 	}
 
 	inline_script = {
 		script = jobs/pme_technicians_add
+		AMOUNT = 500
+	}
+	
+	inline_script = {
+		script = jobs/pme_unity_jobs_add
 		AMOUNT = 500
 	}
 
@@ -1636,11 +1636,15 @@ pme_d_hive_fleet_coordination_nexus = {
 			owner = { is_hive_empire = yes }
 		}
 		modifier = {
-			job_synapse_drone_add = 500
 			job_patrol_drone_add = 500
 			job_warrior_drone_add = 500
 			job_logistics_drone_add = 200
 		}
+	}
+
+	inline_script = {
+		script = jobs/pme_unity_jobs_add
+		AMOUNT = 500
 	}
 
 	resources = {
@@ -1650,6 +1654,7 @@ pme_d_hive_fleet_coordination_nexus = {
 			alloys = 10
 		}
 	}
+	
 
 	drop_weight = {
 		weight = 0
@@ -1684,9 +1689,13 @@ pme_d_hive_collective_computing_consciousness = {
 			owner = { is_hive_empire = yes }
 		}
 		modifier = {
-			job_synapse_drone_add = 500
 			job_brain_drone_add   = 3000
 		}
+	}
+	
+	inline_script = {
+		script = jobs/pme_unity_jobs_add
+		AMOUNT = 500
 	}
 
 	resources = {
@@ -1725,9 +1734,13 @@ pme_d_hive_consciousness_synchronization_lattice = {
 			owner = { is_hive_empire = yes }
 		}
 		modifier = {
-			job_synapse_drone_add = 1000
 			job_patrol_drone_add = 200
 		}
+	}
+	
+	inline_script = {
+		script = jobs/pme_unity_jobs_add
+		AMOUNT = 1000
 	}
 
 	resources = {
@@ -1769,9 +1782,13 @@ pme_d_hive_space_elevator = {
 		}
 		modifier = {
 			job_logistics_drone_add = 1000
-			job_synapse_drone_add = 1000
 			job_warrior_drone_add = 200
 		}
+	}
+	
+	inline_script = {
+		script = jobs/pme_unity_jobs_add
+		AMOUNT = 1000
 	}
 
 	resources = {
@@ -1852,9 +1869,13 @@ pme_d_hive_supplemental_breeding_pools = {
 		}
 		modifier = {
 			job_spawning_drone_add = 500
-			job_synapse_drone_add = 500
 			job_patrol_drone_add = 200
 		}
+	}
+	
+	inline_script = {
+		script = jobs/pme_unity_jobs_add
+		AMOUNT = 500
 	}
 
 	resources = {

@@ -3,25 +3,20 @@ triggered_planet_modifier = {
 		exists = owner
 		owner = {
 			is_regular_empire = yes
-			is_catalytic_empire = no
 		}
+		NOT = {	has_modifier = penal_colony }
 	}
-	modifier = {
-		job_foundry_add = $AMOUNT$
-	}
+	job_foundry_add = $AMOUNT$
 }
-
-triggered_planet_modifier = {
-	potential = {
+triggered_desc = {
+	trigger = {
 		exists = owner
 		owner = {
 			is_regular_empire = yes
-			is_catalytic_empire = yes
 		}
+		NOT = {	has_modifier = penal_colony }
 	}
-	modifier = {
-		job_foundry_add = $AMOUNT$
-	}
+	text = job_foundry_effect_desc
 }
 
 triggered_planet_modifier = {
@@ -29,12 +24,22 @@ triggered_planet_modifier = {
 		exists = owner
 		owner = {
 			is_hive_empire = yes
-			is_catalytic_empire = no
 		}
+		NOT = {	has_modifier = penal_colony }
 	}
-	modifier = {
-		job_alloy_drone_add = $AMOUNT$
+	job_fabricator_add = $AMOUNT$
+}
+triggered_desc = {
+	trigger = {
+		exists = owner
+		owner = {
+			is_hive_empire = yes
+			is_catalytic_empire = no
+			is_wilderness_empire = no
+		}
+		NOT = {	has_modifier = penal_colony }
 	}
+	text = job_alloy_drone_effect_desc
 }
 
 triggered_planet_modifier = {
@@ -42,23 +47,42 @@ triggered_planet_modifier = {
 		exists = owner
 		owner = {
 			is_machine_empire = yes
-			is_catalytic_empire = no
 		}
+		NOT = {	has_modifier = penal_colony }
 	}
-	modifier = {
-		job_fabricator_add = $AMOUNT$
+	job_fabricator_add = $AMOUNT$
+}
+triggered_desc = {
+	trigger = {
+		exists = owner
+		owner = {
+			is_machine_empire = yes
+			is_catalytic_empire = no
+			is_wilderness_empire = no
+		}
+		NOT = {	has_modifier = penal_colony }
 	}
+	text = job_fabricator_effect_desc
 }
 
-triggered_planet_modifier = {
-	potential = {
+triggered_desc = {
+	trigger = {
 		exists = owner
 		owner = {
 			is_gestalt = yes
 			is_catalytic_empire = yes
 		}
+		NOT = {	has_modifier = penal_colony }
 	}
-	modifier = {
-		job_foundry_add = $AMOUNT$
+	text = job_catalytic_drone_effect_desc
+}
+
+triggered_desc = {
+	trigger = {
+		exists = owner
+		owner = {
+			is_wilderness_empire = yes
+		}
 	}
+	text = job_forgesymbiont_effect_desc
 }
